@@ -1,0 +1,347 @@
+# Translation of Argent in Hebrew
+# This file is distributed under the same license as the Argent package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-07-01 03:46:22+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1000\n"
+"Project-Id-Version: Argent\n"
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "תוצאות החיפוש: %s"
+
+#: inc/template-tags.php:275
+msgid "Projects"
+msgstr "פרויקטים"
+
+#: inc/template-tags.php:253
+msgid "Archives"
+msgstr "ארכיון"
+
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:251
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: inc/template-tags.php:247
+msgid "Archives: %s"
+msgstr "ארכיון: %s"
+
+#: inc/template-tags.php:244
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr "צ'אטים"
+
+#: inc/template-tags.php:242
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr "אודיו"
+
+#: inc/template-tags.php:240
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr "סטטוסים"
+
+#: inc/template-tags.php:238
+msgctxt "post format archive title"
+msgid "Links"
+msgstr "לינקים"
+
+#: inc/template-tags.php:236
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr "ציטוטים"
+
+#: inc/template-tags.php:234
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr "וידאו"
+
+#: inc/template-tags.php:232
+msgctxt "post format archive title"
+msgid "Images"
+msgstr "תמונות"
+
+#: inc/template-tags.php:230
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr "גלריות"
+
+#: inc/template-tags.php:228
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "הערות"
+
+#: inc/template-tags.php:225
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "j בF Y"
+
+#: inc/template-tags.php:225
+msgid "Day: %s"
+msgstr "יום: %s"
+
+#: inc/template-tags.php:223
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/template-tags.php:223
+msgid "Month: %s"
+msgstr "חודש: %s"
+
+#: inc/template-tags.php:221
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: inc/template-tags.php:221
+msgid "Year: %s"
+msgstr "שנה: %s"
+
+#: inc/template-tags.php:219
+msgid "Author: %s"
+msgstr "מחבר: %s"
+
+#: inc/template-tags.php:217
+msgid "Tag: %s"
+msgstr "תגית: %s"
+
+#: inc/template-tags.php:215
+msgid "Category: %s"
+msgstr "קטגוריות: %s"
+
+#: inc/template-tags.php:185
+msgid "Your comment is awaiting moderation."
+msgstr "התגובה ממתינה לאישור."
+
+#: inc/template-tags.php:169
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s בשעה %2$s"
+
+#: inc/template-tags.php:153
+msgid "Pingback:"
+msgstr "פינגבאק:"
+
+#: inc/template-tags.php:134
+msgid "% Comments"
+msgstr "% תגובות"
+
+#: inc/template-tags.php:134
+msgid "1 Comment"
+msgstr "תגובה אחת"
+
+#: inc/template-tags.php:134
+msgid "Leave a comment"
+msgstr "כתיבת תגובה"
+
+#: inc/template-tags.php:98
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "פורסם בתאריך %s"
+
+#: inc/template-tags.php:103
+msgctxt "post author"
+msgid "by %s"
+msgstr "מאת %s"
+
+#: inc/template-tags.php:68
+msgid "Post navigation"
+msgstr "ניווט"
+
+#: inc/template-tags.php:43
+msgid "Next"
+msgstr "לשלב הבא"
+
+#: inc/template-tags.php:39
+msgid "Previous"
+msgstr "קודם"
+
+#: inc/template-tags.php:35
+msgid "Posts navigation"
+msgstr "ניווט"
+
+#: inc/extras.php:88
+msgid "Page %s"
+msgstr "עמוד %s"
+
+#: inc/customizer.php:23
+msgid "Front Page Portfolio section settings"
+msgstr ""
+
+#: inc/customizer.php:32
+msgid "Show Portfolio Section"
+msgstr ""
+
+#: inc/customizer.php:43
+msgid "Portfolio Section Title"
+msgstr ""
+
+#: inc/customizer.php:54
+msgid "Number of Projects to display"
+msgstr ""
+
+#: inc/extras.php:36
+msgid "Pages:"
+msgstr ":עמודים"
+
+#: inc/customizer.php:22
+msgid "Theme Options"
+msgstr "אפשרויות"
+
+#: header.php:27
+msgid "Menu"
+msgstr "תפריט"
+
+#: header.php:22
+msgid "Skip to content"
+msgstr "דילוג לתוכן"
+
+#: functions.php:219
+msgid "Read more <span class=\"screen-reader-text\">%1$s</span>"
+msgstr ""
+
+#: functions.php:116
+msgid "Use this widget area to display widgets in the second column of the footer."
+msgstr ""
+
+#: functions.php:123
+msgid "Footer Three"
+msgstr "חלק תחתון שלישי"
+
+#: functions.php:125
+msgid "Use this widget area to display widgets in the third column of the footer."
+msgstr ""
+
+#: functions.php:146
+msgctxt ""
+"Cabin\n"
+"\t font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:155
+msgctxt "Alegreya font: on or off"
+msgid "on"
+msgstr "off"
+
+#: functions.php:163
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr "no-subset"
+
+#: functions.php:105
+msgid "Footer One"
+msgstr "חלק תחתון ראשון"
+
+#: functions.php:107
+msgid "Use this widget area to display widgets in the first column of the footer."
+msgstr ""
+
+#: functions.php:114
+msgid "Footer Two"
+msgstr "חלק תחתון שני"
+
+#: functions.php:70
+msgid "Primary Menu"
+msgstr "תפריט ראשי"
+
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "ערכת עיצוב: %1$s של %2$s"
+
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "פועל על %s"
+
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr "http://he.wordpress.org/"
+
+#: content-portfolio-single.php:49 inc/template-tags.php:128
+msgid "Tagged %1$s"
+msgstr "%1$s תוייג"
+
+#: content-portfolio-single.php:43 inc/template-tags.php:122
+msgid "Posted in %1$s"
+msgstr "פורסם ב-%1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: content-portfolio-single.php:41 content-portfolio-single.php:47
+#: inc/template-tags.php:120 inc/template-tags.php:126
+msgid ", "
+msgstr ", "
+
+#: content-page.php:19 content-portfolio-single.php:53
+#: inc/template-tags.php:137 inc/template-tags.php:153
+#: inc/template-tags.php:193
+msgid "Edit"
+msgstr "עריכה"
+
+#: content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "נראה כי לא ניתן למצוא את מה שחיפשת, אולי חיפוש יעזור."
+
+#: content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "מצוערים, אבל לא נמצאה התאמה. אפשר לנסות שוב עם מילות חיפוש שונות."
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "מוכן לפרסם את הרשומה הראשונה שלך? <a href=\"%1$s\">התחל כאן</a>."
+
+#: content-front-portfolio.php:63
+msgid "Ready to publish your first project? <a href=\"%1$s\">Get started here</a>."
+msgstr "<span dir=rtl>מוכן לפרסם את הפרויקט הראשון שלך?</span> <span dir=rtl><a href=\"%1$s\">התחל כאן</a>.</span>"
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "לא נמצא כלום"
+
+#: content-front-portfolio.php:59
+msgid "No Projects Found"
+msgstr "לא נמצאו פרויקטים"
+
+#: content-front-portfolio.php:62
+msgid "This section will display your latest projects. It can can be disbaled via the Customizer."
+msgstr ""
+
+#: comments.php:77
+msgid "Comments are closed."
+msgstr "סגור לתגובות."
+
+#: comments.php:42 comments.php:65
+msgid "Newer Comments &raquo;"
+msgstr "תגובות חדשות יותר &laquo;"
+
+#: comments.php:41 comments.php:64
+msgid "&laquo; Older Comments"
+msgstr "&laquo; תגובות ישנות יותר"
+
+#: comments.php:38 comments.php:61
+msgid "Comment navigation"
+msgstr "ניווט בתגובות"
+
+#: 404.php:34
+msgid "Popular Categories"
+msgstr ""
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "מחשבה אחת על &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s מחשבות על &ldquo;%2$s&rdquo;"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "לא הצלחנו למצוא שום דבר בכתובת זו. כדאי לנסות את הקישורים הבאים, או את החיפוש."
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "אופס. העמוד שביקשת אינו קיים."

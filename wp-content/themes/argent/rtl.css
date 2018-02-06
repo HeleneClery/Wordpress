@@ -1,0 +1,281 @@
+/*
+Theme Name: Argent
+*/
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+/*--------------------------------------------------------------
+1.0 Reset
+--------------------------------------------------------------*/
+
+caption,
+th,
+td {
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+
+blockquote:before {
+	right: -50px;
+	left: auto;
+}
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+
+ul,
+ol {
+	margin: 0 1em 1.7778em 0;
+}
+
+li > ul,
+li > ol {
+	margin-right: 1.5em;
+	margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+
+textarea {
+	padding-right: 3px;
+	padding-left: 0;
+}
+
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+	right: auto;
+}
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	right: 100%;
+	left: auto;
+}
+
+.main-navigation ul ul {
+	margin-left: 0;
+	margin-right: 2.5em;
+}
+
+/* Small menu. */
+
+.menu-toggle:before {
+	padding-left: 8px;
+	padding-right: 0;
+}
+.main-navigation a {
+	padding: 0.3889em 1.5556em 0.3889em 0;
+}
+
+/* Posts, comments navigation */
+.post-navigation .nav-previous:before {
+	margin-left: 5px;
+	margin-right: auto;
+}
+
+.post-navigation .nav-next:after {
+	margin-right: 5px;
+	margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+6.0 Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+
+.screen-reader-text:focus {
+	right: 5px;
+	left: auto;
+}
+
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+.alignright {
+	float: right;
+	margin-left: 1.5em;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 1.5em;
+	margin-left: auto;
+}
+
+.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+.footer-widget-area {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.widget li > ul,
+.widget li > ol {
+	margin-right: 24px;
+	margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+10.0 Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+10.1 Layout
+--------------------------------------------------------------*/
+
+.site-title {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+10.1 Posts and pages
+--------------------------------------------------------------*/
+.post-thumbnail {
+	float: right;
+	margin-left: 2em;
+	margin-right: auto;
+}
+
+/* Page links */
+.page-links .page-links-title {
+	padding-left: 10px;
+	padding-right: 0;
+}
+
+.page-links span {
+	border-left: 1px solid rgba(0, 0, 0, 0.05);
+	border-right: none;
+}
+
+.page-links .page-links-title {
+	padding-left: 10px;
+	padding-right: 0;
+}
+
+/* 404 Page / No search results */
+.error404 .widget {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.error404 .widget-container .widget:first-child {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.error404 .widget-container .widget:last-child {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/*--------------------------------------------------------------
+10.4 Comments
+--------------------------------------------------------------*/
+
+.comment-list {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.comment-author {
+	float: right;
+	margin-left: 1.14285em;
+	margin-right: auto;
+}
+
+.comment-reply-link {
+	float: left;
+}
+
+/*--------------------------------------------------------------
+13 Media Queries
+--------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+	.main-navigation a {
+	}
+	.nav-menu > li > a:before {
+	  color: #fff;
+	  content: " \2022";
+	  margin-left: 1em;
+	  opacity: 0.3;
+	}
+	.nav-menu > li > a:after {
+		content: '';
+		margin-left: 0;
+	}
+	.nav-menu > li:first-child > a:before {
+	  content: "";
+	}
+	.main-navigation a {
+		padding: 0.8889em 0;
+	}
+	.main-navigation ul ul {
+		float: right;
+		margin: 0;
+		text-align: right;
+	}
+	.main-navigation div>ul>li>ul::before {
+		position: absolute;
+		top: -13px;
+		right: 20px;
+		left: auto;
+	}
+	.single:not(.single-jetpack-portfolio) .entry-content {
+		padding-right: 170px;
+		padding-left: 0;
+	}
+	.single:not(.single-jetpack-portfolio) .entry-meta {
+		float: right;
+	}
+	/* Pull content into margins */
+	blockquote.aligncenter {
+		margin-right: -120px;
+		margin-left: 0;
+	}
+	/* Post/Page/Comment Navigaion */
+	.posts-navigation .nav-previous,
+	.post-navigation .nav-previous {
+		float: right;
+		text-align: right;
+	}
+	.posts-navigation .nav-next,
+	.post-navigation .nav-next {
+		float: left;
+		text-align: left;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+
+	#portfolio-wrapper .jetpack-portfolio {
+		float: right;
+		width: 310px;
+		margin-left: 5.3%;
+		margin-right: 0;
+		margin-bottom: 5.3%;
+	}
+	#portfolio-wrapper .jetpack-portfolio:nth-child(2n+2) {
+		margin-left: 0;
+	}
+}

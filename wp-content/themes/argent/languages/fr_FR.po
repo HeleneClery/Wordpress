@@ -1,0 +1,357 @@
+# Translation of WordPress.com - Themes - Argent in French (France)
+# This file is distributed under the same license as the WordPress.com - Themes - Argent package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-03-23 06:03:23+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fr\n"
+"Project-Id-Version: WordPress.com - Themes - Argent\n"
+
+#: inc/wpcom-colors.php:146
+msgid "Widget Area Background"
+msgstr "Arrière-plan de la zone de widget"
+
+#: inc/wpcom-colors.php:141
+msgid "Main Accent"
+msgstr "Accent Principal"
+
+#: inc/wpcom-colors.php:97
+msgid "Links"
+msgstr "Liens"
+
+#: inc/wpcom-colors.php:53
+msgid "Text"
+msgstr "Texte"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:126
+msgid "Tagged"
+msgstr "Tagué"
+
+#: content-portfolio-archive.php:29
+msgid "Newer projects"
+msgstr "Projets plus récents"
+
+#: content-portfolio-archive.php:28 inc/jetpack.php:39
+msgid "Older projects"
+msgstr "Projets suivants"
+
+#: content-front-portfolio.php:9
+msgid "Recent Projects"
+msgstr "Projets récents"
+
+#. Template Name of the plugin/theme
+#: wp-content/themes/pub/argent/page-templates/front-page.php
+msgid "Front Page"
+msgstr "Page d'Accueil"
+
+#. Author URI of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "https://wordpress.com/themes/"
+msgstr "https://wordpress.com/themes/"
+
+#. Author of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "Automattic"
+msgstr "Automattic"
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "Résultats de recherche pour : %s"
+
+#: inc/template-tags.php:272
+msgid "Projects"
+msgstr "Projets"
+
+#: inc/template-tags.php:250
+msgid "Archives"
+msgstr "Archives"
+
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:248
+msgid "%1$s: %2$s"
+msgstr "%1$s&nbsp;: %2$s"
+
+#: inc/template-tags.php:244
+msgid "Archives: %s"
+msgstr "Archives&nbsp;: %s"
+
+#: inc/template-tags.php:241
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr "Chats"
+
+#: inc/template-tags.php:239
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr "Son"
+
+#: inc/template-tags.php:237
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr "Statuts"
+
+#: inc/template-tags.php:235
+msgctxt "post format archive title"
+msgid "Links"
+msgstr "Liens"
+
+#: inc/template-tags.php:233
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr "Citations"
+
+#: inc/template-tags.php:231
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr "Vidéos"
+
+#: inc/template-tags.php:229
+msgctxt "post format archive title"
+msgid "Images"
+msgstr "Images"
+
+#: inc/template-tags.php:227
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr "Galeries"
+
+#: inc/template-tags.php:225
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "Apartés"
+
+#: inc/template-tags.php:222
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "j F Y"
+
+#: inc/template-tags.php:222
+msgid "Day: %s"
+msgstr "Jour: %s"
+
+#: inc/template-tags.php:220
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/template-tags.php:220
+msgid "Month: %s"
+msgstr "Mois: %s"
+
+#: inc/template-tags.php:218
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: inc/template-tags.php:218
+msgid "Year: %s"
+msgstr "Ann&eacute;e: %s"
+
+#: inc/template-tags.php:216
+msgid "Author: %s"
+msgstr "Auteur : %s"
+
+#: inc/template-tags.php:214
+msgid "Tag: %s"
+msgstr "Tag: %s"
+
+#: inc/template-tags.php:212
+msgid "Category: %s"
+msgstr "Cat&eacute;gorie: %s"
+
+#: inc/template-tags.php:182
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de modération"
+
+#: inc/template-tags.php:166
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s à %2$s"
+
+#: inc/template-tags.php:150
+msgid "Pingback:"
+msgstr "Ping&nbsp;:"
+
+#: inc/template-tags.php:131
+msgid "% Comments"
+msgstr "% commentaires"
+
+#: inc/template-tags.php:131
+msgid "1 Comment"
+msgstr "1 commentaire"
+
+#: inc/template-tags.php:131
+msgid "Leave a comment"
+msgstr "Laisser un commentaire"
+
+#: inc/template-tags.php:103
+msgctxt "post author"
+msgid "by %s"
+msgstr "par %s"
+
+#: inc/template-tags.php:98
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Publié le %s"
+
+#: inc/template-tags.php:68
+msgid "Post navigation"
+msgstr "Navigation des articles"
+
+#: inc/template-tags.php:43
+msgid "Next"
+msgstr "Suivant"
+
+#: inc/template-tags.php:39
+msgid "Previous"
+msgstr "Précédent"
+
+#: inc/template-tags.php:35
+msgid "Posts navigation"
+msgstr "Navigation des articles"
+
+#: inc/extras.php:88
+msgid "Page %s"
+msgstr "Page %s"
+
+#: inc/extras.php:36
+msgid "Pages:"
+msgstr "Pages&nbsp;:"
+
+#: inc/customizer.php:43
+msgid "Portfolio Section Title"
+msgstr "Titre de la section portfolio"
+
+#: inc/customizer.php:22
+msgid "Theme Options"
+msgstr "Options du thème"
+
+#: header.php:27
+msgid "Menu"
+msgstr "Menu"
+
+#: header.php:22
+msgid "Skip to content"
+msgstr "Aller au contenu principal"
+
+#: functions.php:221
+msgid "Read more <span class=\"screen-reader-text\">%1$s</span>"
+msgstr "Lire la suite <span class=\"screen-reader-text\">%1$s</span>"
+
+#: functions.php:163
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr "no-subset"
+
+#: functions.php:155
+msgctxt "Alegreya font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:123
+msgid "Footer Three"
+msgstr "Pied de Page 3"
+
+#: functions.php:114
+msgid "Footer Two"
+msgstr "Pied de Page 2"
+
+#: functions.php:105
+msgid "Footer One"
+msgstr "Pied de Page 1"
+
+#: functions.php:70
+msgid "Primary Menu"
+msgstr "Menu principal"
+
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "Thème %1$s par %2$s."
+
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "Fièrement propulsé par %s"
+
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: content-portfolio-single.php:49
+msgid "Tagged %1$s"
+msgstr "Tagu&eacute; %1$s"
+
+#: content-portfolio-single.php:43 inc/template-tags.php:122
+msgid "Posted in %1$s"
+msgstr "Posté dans %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: content-portfolio-single.php:41 content-portfolio-single.php:47
+#: inc/template-tags.php:120 inc/template-tags.php:126
+msgid ", "
+msgstr ", "
+
+#: content-page.php:19 content-portfolio-single.php:53
+#: inc/template-tags.php:134 inc/template-tags.php:150
+#: inc/template-tags.php:190
+msgid "Edit"
+msgstr "Modifier"
+
+#: content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Contenu Introuvable. Voulez-vous lancer une recherche?"
+
+#: content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Contenu Introuvable. Réessayez en modifiant les termes de recherche."
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Pr&ecirc;t &agrave; publier votre premier article ? <a href=\"%1$s\">Allons-y !</a>."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Aucun résultat"
+
+#: content-front-portfolio.php:65
+msgid "Ready to publish your first project? <a href=\"%1$s\">Get started here</a>."
+msgstr "Prêt à publier votre premier projet ? <a href=\"%1$s\">Commencez ici</a>."
+
+#: content-front-portfolio.php:61
+msgid "No Projects Found"
+msgstr "Aucun projet trouvé"
+
+#: comments.php:77
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: comments.php:42 comments.php:65
+msgid "Newer Comments &raquo;"
+msgstr "Commentaires plus récents &raquo;"
+
+#: comments.php:41 comments.php:64
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Commentaires plus anciens"
+
+#: comments.php:38 comments.php:61
+msgid "Comment navigation"
+msgstr "Navigation des commentaires"
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Une r&eacute;flexion sur &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s r&eacute;flexions sur &ldquo;%2$s&rdquo;"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Contenu Introuvable. L'outil de Recherche ou les Liens ci-dessous vous remettront peut-être sur la voie&hellip;"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oups ! Cette page est introuvable."

@@ -1,0 +1,468 @@
+# Copyright (C) 2017 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Argent 1.1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/argent\n"
+"POT-Creation-Date: 2017-03-23 06:03:18+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:34
+msgid "Popular Categories"
+msgstr ""
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:38 comments.php:61
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:41 comments.php:64
+msgid "&laquo; Older Comments"
+msgstr ""
+
+#: comments.php:42 comments.php:65
+msgid "Newer Comments &raquo;"
+msgstr ""
+
+#: comments.php:77
+msgid "Comments are closed."
+msgstr ""
+
+#: content-front-portfolio.php:9
+msgid "Recent Projects"
+msgstr ""
+
+#: content-front-portfolio.php:61
+msgid "No Projects Found"
+msgstr ""
+
+#: content-front-portfolio.php:64
+msgid ""
+"This section will display your latest projects. It can be disabled via the "
+"Customizer."
+msgstr ""
+
+#: content-front-portfolio.php:65
+msgid ""
+"Ready to publish your first project? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:19
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: content-page.php:19 content-portfolio-single.php:53
+#: inc/template-tags.php:134 inc/template-tags.php:150
+#: inc/template-tags.php:190
+msgid "Edit"
+msgstr ""
+
+#: content-portfolio-archive.php:28 inc/jetpack.php:39
+msgid "Older projects"
+msgstr ""
+
+#: content-portfolio-archive.php:29
+msgid "Newer projects"
+msgstr ""
+
+#: content-portfolio-archive.php:30
+msgid "Portfolio navigation"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: content-portfolio-single.php:41 content-portfolio-single.php:47
+#: inc/template-tags.php:120 inc/template-tags.php:126
+msgid ", "
+msgstr ""
+
+#: content-portfolio-single.php:43 inc/template-tags.php:122
+msgid "Posted in %1$s"
+msgstr ""
+
+#: content-portfolio-single.php:49
+msgid "Tagged %1$s"
+msgstr ""
+
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:70
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:105
+msgid "Footer One"
+msgstr ""
+
+#: functions.php:107
+msgid ""
+"Use this widget area to display widgets in the first column of the footer."
+msgstr ""
+
+#: functions.php:114
+msgid "Footer Two"
+msgstr ""
+
+#: functions.php:116
+msgid ""
+"Use this widget area to display widgets in the second column of the footer."
+msgstr ""
+
+#: functions.php:123
+msgid "Footer Three"
+msgstr ""
+
+#: functions.php:125
+msgid ""
+"Use this widget area to display widgets in the third column of the footer."
+msgstr ""
+
+#: functions.php:146
+msgctxt ""
+"Cabin\n"
+"\t font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:155
+msgctxt "Alegreya font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:163
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr ""
+
+#: functions.php:221
+msgid "Read more <span class=\"screen-reader-text\">%1$s</span>"
+msgstr ""
+
+#: header.php:22
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:27
+msgid "Menu"
+msgstr ""
+
+#: inc/customizer.php:22
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer.php:23
+msgid "Front Page Portfolio section settings"
+msgstr ""
+
+#: inc/customizer.php:32
+msgid "Show Portfolio Section"
+msgstr ""
+
+#: inc/customizer.php:43
+msgid "Portfolio Section Title"
+msgstr ""
+
+#: inc/customizer.php:54
+msgid "Number of Projects to display"
+msgstr ""
+
+#: inc/extras.php:36
+msgid "Pages:"
+msgstr ""
+
+#: inc/extras.php:88
+msgid "Page %s"
+msgstr ""
+
+#: inc/template-tags.php:35
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:39
+msgid "Previous"
+msgstr ""
+
+#: inc/template-tags.php:43
+msgid "Next"
+msgstr ""
+
+#: inc/template-tags.php:68
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:98
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:103
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:126
+msgid "Tagged"
+msgstr ""
+
+#: inc/template-tags.php:131
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:131
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:131
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:150
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:166
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/template-tags.php:182
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/template-tags.php:212
+msgid "Category: %s"
+msgstr ""
+
+#: inc/template-tags.php:214
+msgid "Tag: %s"
+msgstr ""
+
+#: inc/template-tags.php:216
+msgid "Author: %s"
+msgstr ""
+
+#: inc/template-tags.php:218
+msgid "Year: %s"
+msgstr ""
+
+#: inc/template-tags.php:218
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/template-tags.php:220
+msgid "Month: %s"
+msgstr ""
+
+#: inc/template-tags.php:220
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: inc/template-tags.php:222
+msgid "Day: %s"
+msgstr ""
+
+#: inc/template-tags.php:222
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: inc/template-tags.php:225
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr ""
+
+#: inc/template-tags.php:227
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr ""
+
+#: inc/template-tags.php:229
+msgctxt "post format archive title"
+msgid "Images"
+msgstr ""
+
+#: inc/template-tags.php:231
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr ""
+
+#: inc/template-tags.php:233
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr ""
+
+#: inc/template-tags.php:235
+msgctxt "post format archive title"
+msgid "Links"
+msgstr ""
+
+#: inc/template-tags.php:237
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr ""
+
+#: inc/template-tags.php:239
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr ""
+
+#: inc/template-tags.php:241
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr ""
+
+#: inc/template-tags.php:244
+msgid "Archives: %s"
+msgstr ""
+
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:248
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: inc/template-tags.php:250
+msgid "Archives"
+msgstr ""
+
+#: inc/template-tags.php:272
+msgid "Projects"
+msgstr ""
+
+#: inc/wpcom-colors.php:53
+msgid "Text"
+msgstr ""
+
+#: inc/wpcom-colors.php:97
+msgid "Links"
+msgstr ""
+
+#: inc/wpcom-colors.php:141
+msgid "Main Accent"
+msgstr ""
+
+#: inc/wpcom-colors.php:146
+msgid "Widget Area Background"
+msgstr ""
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "Argent"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "https://wordpress.com/themes/argent/"
+msgstr ""
+
+#. Description of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid ""
+"Argent is a clean and modern portfolio theme, geared towards creative "
+"professionals like designers, artists, and photographers. With its simple "
+"homepage template featuring portfolio projects, Argent aims to draw viewers "
+"right at what matters most: your wonderful work."
+msgstr ""
+
+#. Author of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "Automattic"
+msgstr ""
+
+#. Author URI of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "https://wordpress.com/themes/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+#: wp-content/themes/pub/argent/page-templates/front-page.php
+msgid "Front Page"
+msgstr ""
+#: inc/plugin-enhancements.php:92
+msgid "The %1$s is necessary to use some of this theme&rsquo;s features, including: "
+msgstr ""
+
+#: inc/plugin-enhancements.php:93
+msgid "Jetpack plugin"
+msgstr ""
+
+#: inc/plugin-enhancements.php:180
+msgid "no specific module needed"
+msgstr ""
+
+#: inc/plugin-enhancements.php:181
+msgid "Custom Content Types module"
+msgstr ""
+
+#: inc/plugin-enhancements.php:253
+msgid "Please activate %1$s. %2$s"
+msgstr ""
+
+#: inc/plugin-enhancements.php:255
+msgid "Activate"
+msgstr ""
+
+#: inc/plugin-enhancements.php:263
+msgid "Please install %1$s. %2$s"
+msgstr ""
+
+#: inc/plugin-enhancements.php:265
+msgid "Install"
+msgstr ""
+
+#: inc/plugin-enhancements.php:290
+msgid "To use %1$s, please activate the Jetpack plugin&rsquo;s %2$s."
+msgstr ""

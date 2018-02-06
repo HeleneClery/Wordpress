@@ -1,0 +1,362 @@
+# Translation of WordPress.com - Themes - Argent in Azerbaijani
+# This file is distributed under the same license as the WordPress.com - Themes - Argent package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-03-23 06:03:23+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: az\n"
+"Project-Id-Version: WordPress.com - Themes - Argent\n"
+
+#: inc/wpcom-colors.php:146
+msgid "Widget Area Background"
+msgstr "Vidcet Sahəsinin Arxafonu"
+
+#: inc/wpcom-colors.php:141
+msgid "Main Accent"
+msgstr "Əsas Vurğu"
+
+#: inc/wpcom-colors.php:97
+msgid "Links"
+msgstr "Bağlantılar"
+
+#: inc/wpcom-colors.php:53
+msgid "Text"
+msgstr "Mətn"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:126
+msgid "Tagged"
+msgstr "Etiketləndi"
+
+#: content-front-portfolio.php:9
+msgid "Recent Projects"
+msgstr "Ən son layihələr"
+
+#. Template Name of the plugin/theme
+#: wp-content/themes/pub/argent/page-templates/front-page.php
+msgid "Front Page"
+msgstr "Ön Səhifə"
+
+#. Author URI of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "https://wordpress.com/themes/"
+msgstr "https://wordpress.com/themes/"
+
+#. Author of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "Automattic"
+msgstr "Automattic"
+
+#. Description of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "Argent is a clean and modern portfolio theme, geared towards creative professionals like designers, artists, and photographers. With its simple homepage template featuring portfolio projects, Argent aims to draw viewers right at what matters most: your wonderful work."
+msgstr "Argent is a clean and modern portfolio theme, geared towards creative professionals like designers, artists, and photographers. With its simple homepage template featuring portfolio projects, Argent aims to draw viewers right at what matters most: your wonderful work."
+
+#. Theme URI of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "https://wordpress.com/themes/argent/"
+msgstr "https://wordpress.com/themes/argent/"
+
+#. Theme Name of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "Argent"
+msgstr "Argent"
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr " %s üçün Axtarışın Nəticələri:"
+
+#: inc/template-tags.php:272
+msgid "Projects"
+msgstr "Layihələr"
+
+#: inc/template-tags.php:250
+msgid "Archives"
+msgstr "Arxivlər"
+
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:248
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: inc/template-tags.php:244
+msgid "Archives: %s"
+msgstr "Arxivlər: %s"
+
+#: inc/template-tags.php:241
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr "Canlı Söhbətlər"
+
+#: inc/template-tags.php:239
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr "Audio"
+
+#: inc/template-tags.php:237
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr "Statuslar"
+
+#: inc/template-tags.php:235
+msgctxt "post format archive title"
+msgid "Links"
+msgstr "Bağlantılar"
+
+#: inc/template-tags.php:233
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr "Sitatlar"
+
+#: inc/template-tags.php:231
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr "Videolar"
+
+#: inc/template-tags.php:229
+msgctxt "post format archive title"
+msgid "Images"
+msgstr "Təsvirlər"
+
+#: inc/template-tags.php:227
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr "Qalereyalar"
+
+#: inc/template-tags.php:225
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "Yan sütun"
+
+#: inc/template-tags.php:222
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "F j, Y"
+
+#: inc/template-tags.php:222
+msgid "Day: %s"
+msgstr "Gün: %s"
+
+#: inc/template-tags.php:220
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/template-tags.php:220
+msgid "Month: %s"
+msgstr "Ay: %s"
+
+#: inc/template-tags.php:218
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: inc/template-tags.php:218
+msgid "Year: %s"
+msgstr "İl: %s"
+
+#: inc/template-tags.php:216
+msgid "Author: %s"
+msgstr "Müəllif: %s"
+
+#: inc/template-tags.php:214
+msgid "Tag: %s"
+msgstr "Etiket: %s"
+
+#: inc/template-tags.php:212
+msgid "Category: %s"
+msgstr "Kateqoriya: %s"
+
+#: inc/template-tags.php:182
+msgid "Your comment is awaiting moderation."
+msgstr "Şərhiniz yoxlama gözləyir."
+
+#: inc/template-tags.php:166
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s %2$s"
+
+#: inc/template-tags.php:150
+msgid "Pingback:"
+msgstr "Geri izləmə:"
+
+#: inc/template-tags.php:131
+msgid "% Comments"
+msgstr "% Şərh"
+
+#: inc/template-tags.php:131
+msgid "1 Comment"
+msgstr "1 şərh"
+
+#: inc/template-tags.php:131
+msgid "Leave a comment"
+msgstr "Bir şərh yazın"
+
+#: inc/template-tags.php:103
+msgctxt "post author"
+msgid "by %s"
+msgstr "%s tərəfindən"
+
+#: inc/template-tags.php:68
+msgid "Post navigation"
+msgstr "Yazı naviqasiyası"
+
+#: inc/template-tags.php:43
+msgid "Next"
+msgstr "Sonrakı"
+
+#: inc/template-tags.php:39
+msgid "Previous"
+msgstr "Öncəki"
+
+#: inc/template-tags.php:35
+msgid "Posts navigation"
+msgstr "Yazı naviqasiyası"
+
+#: inc/extras.php:88
+msgid "Page %s"
+msgstr "Səhifə %s"
+
+#: inc/extras.php:36
+msgid "Pages:"
+msgstr "Səhifələr:"
+
+#: inc/customizer.php:22
+msgid "Theme Options"
+msgstr "Mövzu Parametrləri"
+
+#: header.php:27
+msgid "Menu"
+msgstr "Menyu"
+
+#: header.php:22
+msgid "Skip to content"
+msgstr "Mühtəviyyata keç"
+
+#: functions.php:163
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr "alt-set yoxdur"
+
+#: functions.php:155
+msgctxt "Alegreya font: on or off"
+msgid "on"
+msgstr "açıq"
+
+#: functions.php:146
+msgctxt ""
+"Cabin\n"
+"\t font: on or off"
+msgid "on"
+msgstr "açıq"
+
+#: functions.php:123
+msgid "Footer Three"
+msgstr "Üçüncü Zirzəmi"
+
+#: functions.php:114
+msgid "Footer Two"
+msgstr "İkinci Zirzəmi"
+
+#: functions.php:105
+msgid "Footer One"
+msgstr "Birinci Zirzəmi"
+
+#: functions.php:70
+msgid "Primary Menu"
+msgstr "Əsas menyu"
+
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "Mövzu: %1$s tərəfindən %2$s."
+
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "%s qürurla təqdim edər"
+
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: content-portfolio-single.php:49
+msgid "Tagged %1$s"
+msgstr "%1$s Etiketləndi"
+
+#: content-portfolio-single.php:43 inc/template-tags.php:122
+msgid "Posted in %1$s"
+msgstr "%1$s kateqoriyasında dərc edildi"
+
+#. translators: used between list items, there is a space after the comma
+#: content-portfolio-single.php:41 content-portfolio-single.php:47
+#: inc/template-tags.php:120 inc/template-tags.php:126
+msgid ", "
+msgstr ","
+
+#: content-page.php:19 content-portfolio-single.php:53
+#: inc/template-tags.php:134 inc/template-tags.php:150
+#: inc/template-tags.php:190
+msgid "Edit"
+msgstr "Redaktə et"
+
+#: content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Axtardığınız səhifə tapılmadı. Bəlkə axtarış qutusu axtardığınızı tapmaqda sizə kömək edər."
+
+#: content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Bağışlayın, axtarış kriteriyalarınıza uyğun heç bir şey tapılmadı. Bəzi fərqli açar kəlmələrdən istifadə edərək təkrar yoxlayın."
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "İlk yazınızı dərc etməyə hazırsınızmı? <a href=\"%1$s\">Buradan başlayın</a>."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Heç Nə Tapılmadı"
+
+#: content-front-portfolio.php:65
+msgid "Ready to publish your first project? <a href=\"%1$s\">Get started here</a>."
+msgstr "İlk layihənizi dərc etməyə hazırsınızmı? <a href=\"%1$s\">Buradan başlayın</a>."
+
+#: content-front-portfolio.php:61
+msgid "No Projects Found"
+msgstr "Heç bir layihə tapılmadı"
+
+#: comments.php:77
+msgid "Comments are closed."
+msgstr "Şərh üçün bağlıdır."
+
+#: comments.php:42 comments.php:65
+msgid "Newer Comments &raquo;"
+msgstr "Yeni Şərhlər &raquo;"
+
+#: comments.php:41 comments.php:64
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Əski Şərhlər"
+
+#: comments.php:38 comments.php:61
+msgid "Comment navigation"
+msgstr "Şərh naviqasiyası"
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "&ldquo;%2$s&rdquo; üzərinə bir şərh"
+msgstr[1] "&ldquo;%2$s&rdquo; üzərinə %1$s şərh"
+
+#: 404.php:34
+msgid "Popular Categories"
+msgstr "Populyar Kateqoriyalar"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Burada heç bir şeyin tapılmadığı görünür. Bəlkə aşağıdakı bağlantılardan birini yoxlayasan və ya bir axtarış edəsən?"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Bağışlayın! Bu səhifə tapılmır."

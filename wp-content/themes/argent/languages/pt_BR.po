@@ -1,0 +1,415 @@
+# Translation of WordPress.com - Themes - Argent in Portuguese (Brazil)
+# This file is distributed under the same license as the WordPress.com - Themes - Argent package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-03-23 06:03:23+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: pt_BR\n"
+"Project-Id-Version: WordPress.com - Themes - Argent\n"
+
+#: inc/wpcom-colors.php:146
+msgid "Widget Area Background"
+msgstr "Plano de fundo da área de widget"
+
+#: inc/wpcom-colors.php:141
+msgid "Main Accent"
+msgstr "Cor principal"
+
+#: inc/wpcom-colors.php:97
+msgid "Links"
+msgstr "Links"
+
+#: inc/wpcom-colors.php:53
+msgid "Text"
+msgstr "Texto"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:126
+msgid "Tagged"
+msgstr "Com a tag"
+
+#: content-portfolio-archive.php:30
+msgid "Portfolio navigation"
+msgstr "Navegação do portfólio"
+
+#: content-portfolio-archive.php:29
+msgid "Newer projects"
+msgstr "Novos Projetos"
+
+#: content-portfolio-archive.php:28 inc/jetpack.php:39
+msgid "Older projects"
+msgstr "Projetos Antigos"
+
+#: content-front-portfolio.php:9
+msgid "Recent Projects"
+msgstr "Projetos Recentes"
+
+#. Template Name of the plugin/theme
+#: wp-content/themes/pub/argent/page-templates/front-page.php
+msgid "Front Page"
+msgstr "Página inicial"
+
+#. Author URI of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "https://wordpress.com/themes/"
+msgstr "https://wordpress.com/themes/"
+
+#. Author of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "Automattic"
+msgstr "Automattic"
+
+#. Description of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "Argent is a clean and modern portfolio theme, geared towards creative professionals like designers, artists, and photographers. With its simple homepage template featuring portfolio projects, Argent aims to draw viewers right at what matters most: your wonderful work."
+msgstr "Argent é um tema de portfólio limpo e moderno, focado para profissionais criativos como designers, artistas, e fotógrafos. Com seu modelo de página inicial simples exibindo projetos do portfólio, Argent foca em trazer os leitores para o que importa mais: seu belo trabalho."
+
+#. Theme URI of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "https://wordpress.com/themes/argent/"
+msgstr "https://wordpress.com/themes/argent/"
+
+#. Theme Name of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "Argent"
+msgstr "Argent"
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "Resultados da pesquisa por: %s"
+
+#: inc/template-tags.php:272
+msgid "Projects"
+msgstr "Projetos"
+
+#: inc/template-tags.php:250
+msgid "Archives"
+msgstr "Arquivos"
+
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:248
+msgid "%1$s: %2$s"
+msgstr "%1$s @ %2$s"
+
+#: inc/template-tags.php:244
+msgid "Archives: %s"
+msgstr "Arquivo: %s"
+
+#: inc/template-tags.php:241
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr "Chats"
+
+#: inc/template-tags.php:239
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr "Áudio"
+
+#: inc/template-tags.php:237
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr "Status"
+
+#: inc/template-tags.php:235
+msgctxt "post format archive title"
+msgid "Links"
+msgstr "Links"
+
+#: inc/template-tags.php:233
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr "Citações"
+
+#: inc/template-tags.php:231
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr "Vídeos"
+
+#: inc/template-tags.php:229
+msgctxt "post format archive title"
+msgid "Images"
+msgstr "Imagens"
+
+#: inc/template-tags.php:227
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr "Galerias"
+
+#: inc/template-tags.php:225
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "Notas"
+
+#: inc/template-tags.php:222
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "F j, Y"
+
+#: inc/template-tags.php:222
+msgid "Day: %s"
+msgstr "Dia: %s"
+
+#: inc/template-tags.php:220
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/template-tags.php:220
+msgid "Month: %s"
+msgstr "Mês: %s"
+
+#: inc/template-tags.php:218
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: inc/template-tags.php:218
+msgid "Year: %s"
+msgstr "Ano: %s"
+
+#: inc/template-tags.php:216
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: inc/template-tags.php:214
+msgid "Tag: %s"
+msgstr "Tag: %s"
+
+#: inc/template-tags.php:212
+msgid "Category: %s"
+msgstr "Categoria: %s"
+
+#: inc/template-tags.php:182
+msgid "Your comment is awaiting moderation."
+msgstr "O seu comentário aguarda moderação."
+
+#: inc/template-tags.php:166
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s às %2$s"
+
+#: inc/template-tags.php:150
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: inc/template-tags.php:131
+msgid "% Comments"
+msgstr "% Comentários"
+
+#: inc/template-tags.php:131
+msgid "1 Comment"
+msgstr "1 comentário"
+
+#: inc/template-tags.php:131
+msgid "Leave a comment"
+msgstr "Deixe um comentário"
+
+#: inc/template-tags.php:103
+msgctxt "post author"
+msgid "by %s"
+msgstr "por %s"
+
+#: inc/template-tags.php:98
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Publicado em %s"
+
+#: inc/template-tags.php:68
+msgid "Post navigation"
+msgstr "Navegação de Posts"
+
+#: inc/template-tags.php:43
+msgid "Next"
+msgstr "Avançar"
+
+#: inc/template-tags.php:39
+msgid "Previous"
+msgstr "Anterior"
+
+#: inc/template-tags.php:35
+msgid "Posts navigation"
+msgstr "Navegação de Posts"
+
+#: inc/extras.php:88
+msgid "Page %s"
+msgstr "Página %s"
+
+#: inc/extras.php:36
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: inc/customizer.php:54
+msgid "Number of Projects to display"
+msgstr "Quantidade de Projetos a mostrar"
+
+#: inc/customizer.php:43
+msgid "Portfolio Section Title"
+msgstr "Título da Seção do Portfolio"
+
+#: inc/customizer.php:32
+msgid "Show Portfolio Section"
+msgstr "Mostrar Seção do Portfolio"
+
+#: inc/customizer.php:23
+msgid "Front Page Portfolio section settings"
+msgstr "Configurações do Portfolio da página inicial"
+
+#: inc/customizer.php:22
+msgid "Theme Options"
+msgstr "Opções do tema"
+
+#: header.php:27
+msgid "Menu"
+msgstr "Menu"
+
+#: header.php:22
+msgid "Skip to content"
+msgstr "Pular para o conteúdo"
+
+#: functions.php:221
+msgid "Read more <span class=\"screen-reader-text\">%1$s</span>"
+msgstr "Leia mais <span class=\"screen-reader-text\">%1$s</span>"
+
+#: functions.php:163
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr "sem subconjunto"
+
+#: functions.php:155
+msgctxt "Alegreya font: on or off"
+msgid "on"
+msgstr "em"
+
+#: functions.php:146
+msgctxt ""
+"Cabin\n"
+"\t font: on or off"
+msgid "on"
+msgstr "ligado"
+
+#: functions.php:125
+msgid "Use this widget area to display widgets in the third column of the footer."
+msgstr "Utilize esta área de widgets para mostrar widgets na terceira coluna do rodapé"
+
+#: functions.php:123
+msgid "Footer Three"
+msgstr "Rodapé Três"
+
+#: functions.php:116
+msgid "Use this widget area to display widgets in the second column of the footer."
+msgstr "Utilize esta área de widgets para mostrar widgets na segunda coluna do rodapé"
+
+#: functions.php:114
+msgid "Footer Two"
+msgstr "Rodapé Dois"
+
+#: functions.php:107
+msgid "Use this widget area to display widgets in the first column of the footer."
+msgstr "Utilize esta área de widgets para mostrar widgets na primeira coluna do rodapé"
+
+#: functions.php:105
+msgid "Footer One"
+msgstr "Rodapé Um"
+
+#: functions.php:70
+msgid "Primary Menu"
+msgstr "Menu Principal"
+
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s por %2$s. "
+
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "Mantido com %s"
+
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr "http://br.wordpress.org/"
+
+#: content-portfolio-single.php:49
+msgid "Tagged %1$s"
+msgstr "Marcado %1$s"
+
+#: content-portfolio-single.php:43 inc/template-tags.php:122
+msgid "Posted in %1$s"
+msgstr "Postado em %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: content-portfolio-single.php:41 content-portfolio-single.php:47
+#: inc/template-tags.php:120 inc/template-tags.php:126
+msgid ", "
+msgstr ", "
+
+#: content-page.php:19 content-portfolio-single.php:53
+#: inc/template-tags.php:134 inc/template-tags.php:150
+#: inc/template-tags.php:190
+msgid "Edit"
+msgstr "Editar"
+
+#: content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Parece que não podemos encontrar o que você está procurando. Talvez pesquisar pode ajudar."
+
+#: content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Nada foi encontrado com os termos da sua pesquisa. Tente novamente com algumas palavras-chaves diferentes."
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Pronto para publicar seu primeiro post? <a href=\"%1$s\">Comece aqui</a>."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Nada encontrado"
+
+#: content-front-portfolio.php:65
+msgid "Ready to publish your first project? <a href=\"%1$s\">Get started here</a>."
+msgstr "Preparado para publicar seu primeiro projeto? <a href=\"%1$s\">Comece aqui</a>."
+
+#: content-front-portfolio.php:64
+msgid "This section will display your latest projects. It can be disabled via the Customizer."
+msgstr "Esta seção irá mostrar seus últimos projetos. Pode ser desabilitado no personalizador do tema."
+
+#: content-front-portfolio.php:61
+msgid "No Projects Found"
+msgstr "Nenhum projeto foi encontrado"
+
+#: comments.php:77
+msgid "Comments are closed."
+msgstr "Os comentários estão desativados."
+
+#: comments.php:42 comments.php:65
+msgid "Newer Comments &raquo;"
+msgstr "Comentários mais recentes &raquo;"
+
+#: comments.php:41 comments.php:64
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Comentários mais antigos"
+
+#: comments.php:38 comments.php:61
+msgid "Comment navigation"
+msgstr "Navegação de Comentários"
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Um comentário sobre &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s comentários sobre &ldquo;%2$s&rdquo;"
+
+#: 404.php:34
+msgid "Popular Categories"
+msgstr "Categorias Populares"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Parece que nada foi encontrado neste lugar. Quem sabe você possa tentar um dos links abaixo ou uma busca?"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Opa! Esta página não pode ser encontrada."

@@ -1,0 +1,312 @@
+/*
+Theme Name: Argent
+Description: Used to style the TinyMCE editor.
+*/
+
+/* =Global
+-------------------------------------------------------------- */
+
+html .mceContentBody {
+	max-width: 490px;
+}
+html .mceContentBody.post-type-page,
+html .mceContentBody.post-type-jetpack-portfolio {
+	max-width: 660px;
+}
+body {
+	font-family: "Cabin", Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.7778;
+	vertical-align: baseline;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: "Alegreya", Georgia, serif;
+	font-weight: 700;
+}
+h1 {
+	font-size: 40px;
+	line-height: 1.6;
+	margin-bottom: 0.8em;
+}
+h2 {
+	font-size: 36px;
+	line-height: 1;
+	margin-bottom: 1em;
+}
+h3 {
+	font-size: 32px;
+	line-height: 1;
+	margin-bottom: 1em;
+}
+h4 {
+	font-size: 24px;
+	line-height: 1.3333;
+	margin-bottom: 1.3333em;
+}
+h5,
+h6 {
+	font-size: 18px;
+	line-height: 1.7778;
+	margin-bottom: 1.7778em;
+	text-transform: uppercase;
+}
+p {
+	margin-bottom: 1.7778em;
+}
+p:first-child {
+	margin-top: 0;
+}
+p:last-child,
+blockquote:last-child {
+	margin-bottom: 0;
+}
+blockquote:first-child {
+	margin-top: 0;
+}
+blockquote {
+	font-family: "Alegreya", Georgia, serif;
+	font-size: 40px;
+	font-style: italic;
+	font-weight: 800;
+	line-height: 1.3em;
+	margin-bottom: 0.8em;
+	position: relative;
+}
+blockquote cite {
+	display: block;
+	font-family: "Cabin", Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	letter-spacing: .03em;
+	line-height: 2.2857;
+	margin-top: 1.14285em;
+	text-transform: uppercase;
+}
+blockquote:before {
+	display: block;
+	color: #f7f7f7;
+	content: "\201C";
+	font-family: "Alegreya", Georgia, serif;
+	font-size: 250px;
+	position: absolute;
+	top: 45px;
+	left: -50px;
+	z-index: -1;
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.7778em;
+}
+ul,
+ol {
+	padding: 0;
+	margin: 0 0 1.7778em 1em;
+	list-style-position: outside;
+}
+ul {
+	list-style: disc;
+}
+ol {
+	list-style: decimal;
+}
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.7778em;
+}
+address {
+	margin: 0 0 1.7778em 0;
+}
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 14px;
+	line-height: 2.2857;
+	margin-bottom: 2.2857em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+code, kbd, tt, var {
+	font-family: "Courier 10 Pitch", Courier, monospace;
+}
+abbr, acronym {
+	border-bottom: 1px dotted #e6e6e6;
+	cursor: help;
+}
+mark, ins {
+	background-color: #fff9c0;
+	text-decoration: none;
+}
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+small {
+	font-size: 75%;
+}
+big {
+	font-size: 125%;
+}
+figure {
+	margin: 0;
+}
+.mce-item-table,
+.mce-item-table th,
+.mce-item-table td {
+	border: none;
+}
+.mce-item-table {
+	border-collapse: separate;
+	border-spacing: 0;
+	width: 100%;
+	margin: 0 0 1.7778em;
+}
+.mce-item-table th,
+.mce-item-table caption {
+	font-weight: bold;
+	padding: 10px 5px 5px;
+	border-bottom: 4px solid #222;
+}
+.mce-item-table td {
+	padding: 3px 5px;
+	border-bottom: 1px solid #222;
+	vertical-align: baseline;
+}
+img {
+	height: auto;
+	margin-bottom: 1.7778em;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+/* Links */
+a {
+	border-bottom: 2px solid transparent;
+	color: #999;
+	text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+	border-bottom: 2px solid #222;
+	color: #222;
+}
+a img {
+	border: 0;
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* =Media
+----------------------------------------------- */
+
+.wp-caption {
+	margin-bottom: 0.8889em;
+	max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0 auto;
+}
+.wp-caption-text {
+	color: #999;
+	font-size: 14px;
+	line-height: 2.2857;
+	text-align: center;
+}
+.wp-caption .wp-caption-text {
+	margin-top: 0.5714em;
+}
+.mceTemp + ul,
+.mceTemp + ol {
+	list-style-position: inside;
+}
+
+/* =Galleries
+-------------------------------------------------------------- */
+.gallery {
+	margin-bottom: 1.5em;
+}
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+.gallery-caption {
+	display: block;
+}
+
+/* =RTL
+-------------------------------------------------------------- */
+
+html .mceContentBody.rtl {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+.rtl ol,
+.rtl ul {
+	margin-left: 0;
+	margin-right: 1em;
+}
+.rtl .wp-caption,
+.rtl tr th {
+	text-align: right;
+}
+.rtl td {
+	text-align: right;

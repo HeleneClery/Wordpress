@@ -1,0 +1,416 @@
+# Translation of WordPress.com - Themes - Argent in Romanian
+# This file is distributed under the same license as the WordPress.com - Themes - Argent package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-03-23 06:03:23+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ro\n"
+"Project-Id-Version: WordPress.com - Themes - Argent\n"
+
+#: inc/wpcom-colors.php:146
+msgid "Widget Area Background"
+msgstr "Fundal zonă asamblabilă"
+
+#: inc/wpcom-colors.php:141
+msgid "Main Accent"
+msgstr "Accent principal"
+
+#: inc/wpcom-colors.php:97
+msgid "Links"
+msgstr "Legături"
+
+#: inc/wpcom-colors.php:53
+msgid "Text"
+msgstr "Text"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:126
+msgid "Tagged"
+msgstr "Etichetat"
+
+#: content-portfolio-archive.php:30
+msgid "Portfolio navigation"
+msgstr "Navigare în portofoliu"
+
+#: content-portfolio-archive.php:29
+msgid "Newer projects"
+msgstr "Proiecte mai noi"
+
+#: content-portfolio-archive.php:28 inc/jetpack.php:39
+msgid "Older projects"
+msgstr "Proiecte mai vechi"
+
+#: content-front-portfolio.php:9
+msgid "Recent Projects"
+msgstr "Proiecte recente"
+
+#. Template Name of the plugin/theme
+#: wp-content/themes/pub/argent/page-templates/front-page.php
+msgid "Front Page"
+msgstr "Pagina principală"
+
+#. Author URI of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "https://wordpress.com/themes/"
+msgstr "https://wordpress.com/themes/"
+
+#. Author of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "Automattic"
+msgstr "Automattic"
+
+#. Description of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "Argent is a clean and modern portfolio theme, geared towards creative professionals like designers, artists, and photographers. With its simple homepage template featuring portfolio projects, Argent aims to draw viewers right at what matters most: your wonderful work."
+msgstr "Argent este o temă de portofoliu curată și modernă orientată către creatori profesioniști, cum ar fi  designeri, artiști și fotografi. Cu șablonul său simplu pentru prima pagină care evidențiază proiectele de portofoliu, Argent își propune să atragă atenția vizitatorilor către ce contează cel mai mult: munca ta minunată."
+
+#. Theme URI of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "https://wordpress.com/themes/argent/"
+msgstr "https://wordpress.com/themes/argent/"
+
+#. Theme Name of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "Argent"
+msgstr "Argent"
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "Rezultatele căutări pentru: %s"
+
+#: inc/template-tags.php:272
+msgid "Projects"
+msgstr "Proiecte"
+
+#: inc/template-tags.php:250
+msgid "Archives"
+msgstr "Arhive"
+
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:248
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: inc/template-tags.php:244
+msgid "Archives: %s"
+msgstr "Arhive: %s"
+
+#: inc/template-tags.php:241
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr "Conversații"
+
+#: inc/template-tags.php:239
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr "Audio"
+
+#: inc/template-tags.php:237
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr "Stări"
+
+#: inc/template-tags.php:235
+msgctxt "post format archive title"
+msgid "Links"
+msgstr "Legături"
+
+#: inc/template-tags.php:233
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr "Citat"
+
+#: inc/template-tags.php:231
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr "Videouri"
+
+#: inc/template-tags.php:229
+msgctxt "post format archive title"
+msgid "Images"
+msgstr "Imagini"
+
+#: inc/template-tags.php:227
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr "Galerii"
+
+#: inc/template-tags.php:225
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "Note"
+
+#: inc/template-tags.php:222
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "j F Y"
+
+#: inc/template-tags.php:222
+msgid "Day: %s"
+msgstr "Zi: %s"
+
+#: inc/template-tags.php:220
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/template-tags.php:220
+msgid "Month: %s"
+msgstr "Lună: %s"
+
+#: inc/template-tags.php:218
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: inc/template-tags.php:218
+msgid "Year: %s"
+msgstr "An: %s"
+
+#: inc/template-tags.php:216
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: inc/template-tags.php:214
+msgid "Tag: %s"
+msgstr "Etichetă: %s"
+
+#: inc/template-tags.php:212
+msgid "Category: %s"
+msgstr "Categorie: %s"
+
+#: inc/template-tags.php:182
+msgid "Your comment is awaiting moderation."
+msgstr "Comentariul tău e în așteptare."
+
+#: inc/template-tags.php:166
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s la %2$s"
+
+#: inc/template-tags.php:150
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: inc/template-tags.php:131
+msgid "% Comments"
+msgstr "% comentarii"
+
+#: inc/template-tags.php:131
+msgid "1 Comment"
+msgstr "1 comentariu"
+
+#: inc/template-tags.php:131
+msgid "Leave a comment"
+msgstr "Lasă un comentariu"
+
+#: inc/template-tags.php:103
+msgctxt "post author"
+msgid "by %s"
+msgstr "de %s"
+
+#: inc/template-tags.php:98
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Publicat de %s"
+
+#: inc/template-tags.php:68
+msgid "Post navigation"
+msgstr "Navigare articol"
+
+#: inc/template-tags.php:43
+msgid "Next"
+msgstr "Următorul"
+
+#: inc/template-tags.php:39
+msgid "Previous"
+msgstr "Anterior"
+
+#: inc/template-tags.php:35
+msgid "Posts navigation"
+msgstr "Navigare articole"
+
+#: inc/extras.php:88
+msgid "Page %s"
+msgstr "Pagina %s"
+
+#: inc/extras.php:36
+msgid "Pages:"
+msgstr "Pagini:"
+
+#: inc/customizer.php:54
+msgid "Number of Projects to display"
+msgstr "Număr de proiecte de afișat"
+
+#: inc/customizer.php:43
+msgid "Portfolio Section Title"
+msgstr "Titlu secțiune portofoliu"
+
+#: inc/customizer.php:32
+msgid "Show Portfolio Section"
+msgstr "Arată secțiune portofoliu"
+
+#: inc/customizer.php:23
+msgid "Front Page Portfolio section settings"
+msgstr "Setări secțiune portofoliu pagina din față"
+
+#: inc/customizer.php:22
+msgid "Theme Options"
+msgstr "Opțiuni temă"
+
+#: header.php:27
+msgid "Menu"
+msgstr "Meniu"
+
+#: header.php:22
+msgid "Skip to content"
+msgstr "Sări la conţinut"
+
+#: functions.php:221
+msgid "Read more <span class=\"screen-reader-text\">%1$s</span>"
+msgstr "Citește mai mult <span class=\"screen-reader-text\">%1$s</span>"
+
+#: functions.php:163
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr "romanian"
+
+#: functions.php:155
+msgctxt "Alegreya font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:146
+msgctxt ""
+"Cabin\n"
+"\t font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:125
+msgid "Use this widget area to display widgets in the third column of the footer."
+msgstr "Folosește această zonă asamblabilă pentru a afișa piese în a treia coloană a subsolului."
+
+#: functions.php:123
+msgid "Footer Three"
+msgstr "Subsol trei"
+
+#: functions.php:116
+msgid "Use this widget area to display widgets in the second column of the footer."
+msgstr "Folosește această zonă asamblabilă pentru a afișa piese în a doua coloană a subsolului."
+
+#: functions.php:114
+msgid "Footer Two"
+msgstr "Subsol doi"
+
+#: functions.php:107
+msgid "Use this widget area to display widgets in the first column of the footer."
+msgstr "Folosește această zonă asamblabilă pentru a afișa piese în prima coloană a subsolului."
+
+#: functions.php:105
+msgid "Footer One"
+msgstr "Subsol unu"
+
+#: functions.php:70
+msgid "Primary Menu"
+msgstr "Primary Menu"
+
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s de %2$s."
+
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "Propulsat cu mândrie de %s"
+
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: content-portfolio-single.php:49
+msgid "Tagged %1$s"
+msgstr "Etichetat %1$s"
+
+#: content-portfolio-single.php:43 inc/template-tags.php:122
+msgid "Posted in %1$s"
+msgstr "Publicat în %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: content-portfolio-single.php:41 content-portfolio-single.php:47
+#: inc/template-tags.php:120 inc/template-tags.php:126
+msgid ", "
+msgstr ", "
+
+#: content-page.php:19 content-portfolio-single.php:53
+#: inc/template-tags.php:134 inc/template-tags.php:150
+#: inc/template-tags.php:190
+msgid "Edit"
+msgstr "Editează"
+
+#: content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Nu s-a putut găsi conținutul căutat. Probabil o căutare sau una dintre legăturile de mai jos pot ajuta."
+
+#: content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Ne pare rau, căutarea nu are nici un rezultat. Vă rugăm să încercați din nou cu unele cuvinte cheie diferite."
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Pregătit să publici primul articol? <a href=\"%1$s\">Începe de aici</a>."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Nu a fost găsit nimic"
+
+#: content-front-portfolio.php:65
+msgid "Ready to publish your first project? <a href=\"%1$s\">Get started here</a>."
+msgstr "Gata să-ți publici primul proiect? <a href=\"%1$s\">Începe de aici</a>."
+
+#: content-front-portfolio.php:64
+msgid "This section will display your latest projects. It can be disabled via the Customizer."
+msgstr "Această secțiune va afișa ultimele tale proiectele. Poate fi dezactivată din personalizator."
+
+#: content-front-portfolio.php:61
+msgid "No Projects Found"
+msgstr "Niciun proiect găsit"
+
+#: comments.php:77
+msgid "Comments are closed."
+msgstr "Comentariile sunt închise."
+
+#: comments.php:42 comments.php:65
+msgid "Newer Comments &raquo;"
+msgstr "Comentarii mai noi &raquo;"
+
+#: comments.php:41 comments.php:64
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Comentarii mai vechi"
+
+#: comments.php:38 comments.php:61
+msgid "Comment navigation"
+msgstr "Navigare comentarii"
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Un gând despre &ldquo;%2$s&rdquo;"
+msgstr[1] " %1$s gânduri despre &ldquo;%2$s&rdquo;"
+msgstr[2] " %1$s de gânduri despre &ldquo;%2$s&rdquo;"
+
+#: 404.php:34
+msgid "Popular Categories"
+msgstr "Categorii populare"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Se pare că nu a fost găsit nimic la această locație. Poate încerci una din legăturile de mai jos sau o căutare?"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Hopa! Pagina nu a fost găsită."
