@@ -10,3 +10,6 @@ RewriteRule . /wordpress/index.php [L]
 </IfModule>
 
 # END WordPress
+# BEGIN Hotlinking
+
+# END Hotlinking
