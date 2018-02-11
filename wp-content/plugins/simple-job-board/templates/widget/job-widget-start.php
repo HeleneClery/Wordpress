@@ -1,1 +1,0 @@
-<ul class="job-listing-widget">
