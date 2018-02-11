@@ -1,9 +1,12 @@
 <?php global $cpt ?>
-<div class="barreCompteur" id="tab"><span><?php echo $cpt ?> stages </span><div class="offre_compteur"><a href="/espace-candidats-offres.php?page=0#tab">&lt;&lt;</a>&nbsp;&nbsp;<span class="champ_oblig" style="text-decoration:underline;">1</span>&nbsp;&nbsp;<a href="/espace-candidats-offres.php?page=1#tab">2</a>&nbsp;&nbsp;<a href="/espace-candidats-offres.php?page=2#tab">3</a>&nbsp;&nbsp;<a href="/espace-candidats-offres.php?page=121#tab">Dernière page &gt;&gt;</a></div></div>
+<div  id="tab">
+	<span><?php echo $cpt ?> stages </span>
+	<span id="navigationPages"><a href="">Navigation pages</a></span>
+</div>
 <table class="table">
 	<thead>
 	<tr>
-		<th class="f14">
+		<th>
 		<div class="enteteOffres row">
 			<div class="col-sm-2 hidden-xs">Entreprise</div>
 			<div class="col-sm-2 hidden-xs"></div>
