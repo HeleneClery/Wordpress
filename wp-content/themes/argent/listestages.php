@@ -9,7 +9,7 @@ Template Name: ListeStages
 <?php get_header();?>
 
 <!-- zone de recherche -->
-<!-- <?php //include 'PP-inc/form-search.php'; ?> -->
+<?php include 'PP-inc/form-search.php'; ?>
 
 <!-- initialisation du compteur -->
 <?php 

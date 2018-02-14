@@ -35,7 +35,7 @@ Tags: custom-background, custom-colors, custom-header, custom-menu, featured-ima
 	12.1 Captions
 	12.2 Galleries
 --------------------------------------------------------------*/
-@import "bootstrap-grid.css";
+@import "bootstrap-grid.min.css";
 /*--------------------------------------------------------------
 1.0 Reset
 --------------------------------------------------------------*/

@@ -1,0 +1,43 @@
+
+.container{
+	padding:50px;
+}
+p  {
+	text-align:justify;
+}
+
+#navigationPages{
+	float : right;
+}
+
+#tab{
+	padding : 0 10px 0 10px;
+}
+.enteteOffres{
+		padding:0 10px 0 10px;
+		margin:0 10px 0 10px;	
+}
+.blocOffres{
+	background-color:#f7f7f7;
+	padding:10px;
+	margin:10px;
+	line-height:1;
+}
+
+.blocOffres:hover{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2)
+}
+
+td{
+	border-bottom:none;
+}
+
+.table thead{
+	background-color:#000;
+	color:#FFF;
+	
+}
+
+.text-small{
+	font-size: 80%;
+}

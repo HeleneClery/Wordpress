@@ -1,5 +1,11 @@
 <?php
 /**
+ * Fonction réécriture d'URL
+ * /
+
+
+
+/**
  * argent functions and definitions
  *
  * @package Argent
@@ -8,6 +14,9 @@
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
+
+
+
 if ( ! isset( $content_width ) ) {
 	$content_width = 780; /* pixels */
 }
