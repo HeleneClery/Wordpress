@@ -1,6 +1,9 @@
 <?php 
 global $id_stage;
-$resultat = $wpdb->get_row($wpdb-> prepare("SELECT * FROM stages where id_stage = %d", $id_stage)); ?>
+$resultat = $wpdb->get_row($wpdb-> prepare("SELECT * FROM stages where id_stage = %d", $id_stage)); 
+require_once("function.php");
+?> 
+
 <tr>
 	<td>
 		<a href="single-post?stage=<?php echo $id_stage?>">
@@ -27,7 +30,7 @@ $resultat = $wpdb->get_row($wpdb-> prepare("SELECT * FROM stages where id_stage 
 					</div>
 				</div>
 				<div class="col-sm-2"><?php echo $resultat->secteur ?></div>
-				<div class="col-sm-2"><!-- TO DO : boucle technologies --></div>
+				<div class="col-sm-2"><?php echo ListeTechno($id_stage) ?></div>
 				<div class="col-sm-1"><?php echo $resultat->promotion ?></div>
 				<div class="col-sm-2"><?php echo $resultat->ville ?></div>
 			</div>
