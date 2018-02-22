@@ -1,7 +1,8 @@
 <?php 
+require_once("function.php");
 global $id_stage;
 $resultat = $wpdb->get_row($wpdb-> prepare("SELECT * FROM stages where id_stage = %d", $id_stage)); 
-require_once("function.php");
+
 ?> 
 
 <tr>
@@ -10,6 +11,7 @@ require_once("function.php");
 			<div class="blocOffres row">
 				<div class="col-sm-1">
 					<div class="logo">
+						<!-- TO DO : Lien vers images entreprises -->
 						<img src="https://www.cloud-temple.com/wp-content/themes/dragonfly/img/logo-tmpl.png"/>
 					</div>
 					<div >

@@ -7,18 +7,18 @@
 			<?php 
 			if ($nombreDePages<5) {
 				for ($i=1; $i<=$nombreDePages ; $i++) { 
-					if ($i==$pageActuelle) {
-						echo "<li ><a class=\"pageActuelle\" href=\"#\">".$i."</a></li>";
-					} else {
-						echo "<li><a href=\"rapports-de-stage/".$i."/\">".$i."</a></li>";
-					}
-				} 
+				if ($i==$pageActuelle) {
+					echo "<li ><a class=\"pageActuelle\" href=\"#\">".$i."</a></li>";
+				} else {
+					echo "<li><a href=\"rapports-de-stage/".$i."/\">".$i."</a></li>";
+				}
+			} 
 			} else {
-				echo "<li><a href=\"rapports-de-stage/".($pageActuelle-2)."/\">".($pageActuelle-2)."</a></li>";
-				echo "<li><a href=\"rapports-de-stage/".($pageActuelle-1)."\">".($pageActuelle-1)."</a></li>";
+				echo "<li><a href=\"rapports-de-stage/".$pageActuelle-2."/\">".$pageActuelle-2."</a></li>";
+				echo "<li><a href=\"rapports-de-stage/".$pageActuelle-1."/\">".$pageActuelle-1."</a></li>";
 				echo "<li ><a class=\"pageActuelle\" href=\"#\">".$pageActuelle."</a></li>";
-				echo "<li><a href=\"rapports-de-stage/".($pageActuelle+1)."\">".($pageActuelle+1)."</a></li>";
-				echo "<li><a href=\"rapports-de-stage/".($pageActuelle+2)."\">".($pageActuelle+2)."</a></li>";
+				echo "<li><a href=\"rapports-de-stage/".$pageActuelle+1."/\">".$pageActuelle+1."</a></li>";
+				echo "<li><a href=\"rapports-de-stage/".$pageActuelle+2."/\">".$pageActuelle+2."</a></li>";
 			}
 			?>
 			
