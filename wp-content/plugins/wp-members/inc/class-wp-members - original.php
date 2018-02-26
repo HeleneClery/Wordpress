@@ -940,21 +940,21 @@ class WP_Members {
 
 		// Default Form Fields.
 		$default_form_fields = array(
-			'first_name'       => __( 'Prénom', 'wp-members' ),
-			'last_name'        => __( 'Nom', 'wp-members' ),
-			'addr1'            => __( 'Adresse', 'wp-members' ),
-			'addr2'            => __( 'Complément adresse', 'wp-members' ),
-			'city'             => __( 'Ville', 'wp-members' ),
-			'thestate'         => __( 'Département', 'wp-members' ),
-			'zip'              => __( 'Code postal', 'wp-members' ),
-			'country'          => __( 'Pays', 'wp-members' ),
-			'phone1'           => __( 'Téléphone', 'wp-members' ),
+			'first_name'       => __( 'First Name', 'wp-members' ),
+			'last_name'        => __( 'Last Name', 'wp-members' ),
+			'addr1'            => __( 'Address 1', 'wp-members' ),
+			'addr2'            => __( 'Address 2', 'wp-members' ),
+			'city'             => __( 'City', 'wp-members' ),
+			'thestate'         => __( 'State', 'wp-members' ),
+			'zip'              => __( 'Zip', 'wp-members' ),
+			'country'          => __( 'Country', 'wp-members' ),
+			'phone1'           => __( 'Day Phone', 'wp-members' ),
 			'user_email'       => __( 'Email', 'wp-members' ),
-			'confirm_email'    => __( 'Confirmer Email', 'wp-members' ),
+			'confirm_email'    => __( 'Confirm Email', 'wp-members' ),
 			'user_url'         => __( 'Website', 'wp-members' ),
-			'description'      => __( 'Biographie', 'wp-members' ),
-			'password'         => __( 'Mot de Passe', 'wp-members' ),
-			'confirm_password' => __( 'Confirmer Mot de Passe', 'wp-members' ),
+			'description'      => __( 'Biographical Info', 'wp-members' ),
+			'password'         => __( 'Password', 'wp-members' ),
+			'confirm_password' => __( 'Confirm Password', 'wp-members' ),
 			'tos'              => __( 'TOS', 'wp-members' ),
 		);
 	
@@ -978,17 +978,17 @@ class WP_Members {
 			'pwdchg_button'        => __( 'Update Password', 'wp-members' ),
 			
 			// Password reset form.
-			'pwdreset_heading'     => __( 'Réinitialiser le Mot de passe oublié', 'wp-members' ),
-			'pwdreset_username'    => __( 'Identifiant' ),
+			'pwdreset_heading'     => __( 'Reset Forgotten Password', 'wp-members' ),
+			'pwdreset_username'    => __( 'Username' ),
 			'pwdreset_email'       => __( 'Email' ),
-			'pwdreset_button'      => __( 'Réinitialiser le Mot de Passe' ),
-			'username_link_before' => __( 'Identifiant oublié?', 'wp-members' ) . '&nbsp;',
-			'username_link'        => __( 'Cliquez ici', 'wp-members' ),
+			'pwdreset_button'      => __( 'Reset Password' ),
+			'username_link_before' => __( 'Forgot username?', 'wp-members' ) . '&nbsp;',
+			'username_link'        => __( 'Click here', 'wp-members' ),
 			
 			// Retrieve username form.
-			'username_heading'     => __( 'Récupérer l\'identifiant', 'wp-members' ),
-			'username_email'       => __( 'Adresse de messagerie', 'wp-members' ),
-			'username_button'      => __( 'Récupérer l\'identifiant', 'wp-members' ),
+			'username_heading'     => __( 'Retrieve username', 'wp-members' ),
+			'username_email'       => __( 'Email Address', 'wp-members' ),
+			'username_button'      => __( 'Retrieve username', 'wp-members' ),
 			
 			// Register form.
 			'register_heading'     => __( 'New User Registration', 'wp-members' ),
@@ -1001,13 +1001,13 @@ class WP_Members {
 			'register_required'    => '<span class="req">*</span>' . __( 'Required field', 'wp-members' ),
 			
 			// User profile update form.
-			'profile_heading'      => __( 'Modifier vos informations', 'wp-members' ),
-			'profile_username'     => __( 'Identifiant' ),
-			'profile_submit'       => __( 'Mettre à jour votre profil', 'wp-members' ),
+			'profile_heading'      => __( 'Edit Your Information', 'wp-members' ),
+			'profile_username'     => __( 'Username' ),
+			'profile_submit'       => __( 'Update Profile', 'wp-members' ),
 			'profile_upload'       => __( 'Update this file', 'wp-members' ),
 			
 			// Error messages and dialogs.
-			'login_failed_heading' => __( 'Connexion échouée!', 'wp-members' ),
+			'login_failed_heading' => __( 'Login Failed!', 'wp-members' ),
 			'login_failed'         => __( 'You entered an invalid username or password.', 'wp-members' ),
 			'login_failed_link'    => __( 'Click here to continue.', 'wp-members' ),
 			'pwdchangempty'        => __( 'Password fields cannot be empty', 'wp-members' ),
@@ -1039,22 +1039,22 @@ class WP_Members {
 			'sb_logout'            => __( 'click here to log out', 'wp-members' ),
 			'sb_login_failed'      => __( 'Login Failed!<br />You entered an invalid username or password.', 'wp-members' ),
 			'sb_not_logged_in'     => __( 'You are not logged in.', 'wp-members' ),
-			'sb_login_username'    => __( 'Identifiant' ),
-			'sb_login_password'    => __( 'Mot de Passe' ),
-			'sb_login_button'      => __( 'Connecter', 'wp-members' ),
+			'sb_login_username'    => __( 'Username' ),
+			'sb_login_password'    => __( 'Password' ),
+			'sb_login_button'      => __( 'log in', 'wp-members' ),
 			'sb_login_forgot'      => __( 'Forgot?', 'wp-members' ),
 			'sb_login_register'    => __( 'Register' ),
 			
 			// Default Dialogs.
-			'restricted_msg'       => __( "Veuillez vous connecter pour voir le contenu de cette page!", 'wp-members' ),
-			'user'                 => __( "Désolé, cet identifiant est déjà choisi. Veuillez choisir un autre identifiant.", 'wp-members' ),
-			'email'                => __( "Désolé, cette adresse mail est déjà utilisée.<br />Veuillez choisir une autre adresse mail.", 'wp-members' ),
-			'success'              => __( "Bienvenue à l'espace gestion des rapports de stage M2 CCI Tours.<br /><br />Veuillez valider votre inscription avec le mail reçu.", 'wp-members' ),
-			'editsuccess'          => __( "Vos informations sont bien mises à jour!", 'wp-members' ),
-			'pwdchangerr'          => __( "Les deux mots de passe ne correspondent pas.<br /><br />Veuillez réessayer!", 'wp-members' ),
-			'pwdchangesuccess'     => __( "Le mot de passe est bien modifié!", 'wp-members' ),
-			'pwdreseterr'          => __( "L'identifiant ou l'adresse mail n'est pas enregistré dans notre base de données. Veuillez réessayer!", 'wp-members' ),
-			'pwdresetsuccess'      => __( "Votre mot de passe est bien réinitialisé!<br /><br />Le nouveau mot de passe a été envoyé à votre adresse mail.", 'wp-members' ),
+			'restricted_msg'       => __( "This content is restricted to site members.  If you are an existing user, please log in.  New users may register below.", 'wp-members' ),
+			'user'                 => __( "Sorry, that username is taken, please try another.", 'wp-members' ),
+			'email'                => __( "Sorry, that email address already has an account.<br />Please try another.", 'wp-members' ),
+			'success'              => __( "Congratulations! Your registration was successful.<br /><br />You may now log in using the password that was emailed to you.", 'wp-members' ),
+			'editsuccess'          => __( "Your information was updated!", 'wp-members' ),
+			'pwdchangerr'          => __( "Passwords did not match.<br /><br />Please try again.", 'wp-members' ),
+			'pwdchangesuccess'     => __( "Password successfully changed!", 'wp-members' ),
+			'pwdreseterr'          => __( "Either the username or email address do not exist in our records.", 'wp-members' ),
+			'pwdresetsuccess'      => __( "Password successfully reset!<br /><br />An email containing a new password has been sent to the email address on file for your account.", 'wp-members' ),
 		
 		); // End of $defaults array.
 		
