@@ -10,11 +10,15 @@
  
 add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
 function my_wp_nav_menu_args( $args = '' ) {
-if( is_user_logged_in() ) { 
+if( is_user_logged_in() && (!current_user_can('administrator') | !is_admin())) { 
     $args['menu'] = 'connecté';
-} else { 
+}
+if (!is_user_logged_in()) {
     $args['menu'] = 'non-connecté';
-} 
+}
+if (current_user_can('administrator') | is_admin()) {
+	$args['menu'] = 'admin';
+ }
     return $args;
 }
 
@@ -31,22 +35,15 @@ function custom_login(){
 
 
 
-add_action('init','custom_login2');
-function custom_login2(){
- global $pagenow;
- if( '/wordpress/profil/' == $pagenow && ! is_user_logged_in()) {
-  wp_redirect('/wordpress/');
-  exit();
- }
-}
-
-
 
 add_action( 'template_redirect', 'redirect_to_specific_page' );
 function redirect_to_specific_page() {
 if ( is_page(27) && ! is_user_logged_in() ) {
 auth_redirect(); 
   }
+if (is_page(80) && !is_admin() && !current_user_can('administrator')) {
+	auth_redirect();
+}
 }
 
 

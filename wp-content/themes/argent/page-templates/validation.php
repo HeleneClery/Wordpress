@@ -38,15 +38,17 @@ if ($email == null) {
         $requete_update_verif = $pdo->prepare('UPDATE wp_usermeta SET meta_value="true" WHERE user_id = (SELECT ID from wp_users WHERE user_email = ?) AND meta_key="verif"');
         $requete_update_verif->execute([$email]);
         echo '<div align="center"> Félicitation! Vous pouvez maintenant accéder à l\'espace Rapport de stage M2 CCI Tours</div>';
-        echo do_shortcode('[wpmem_form login]',true);
+        echo '
+        <script type="text/javascript">
+    window.setTimeout(function() {
+        window.location.href=\'/wordpress/connexion/\';
+    }, 5000);
+        </script>';
     } else {
         echo '<div align="center"> Veuillez valider votre inscription avec le lien fourni</div>';
     }
-    
 }
-
 ?>
-
 
 <?php
 get_footer();
