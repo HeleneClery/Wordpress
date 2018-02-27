@@ -25,8 +25,15 @@ function connexion_bdd() {
 $email = $_GET['email'];
 $guid = $_GET['guid'];
 $message = $_GET['message'];
+$pdo = connexion_bdd();
 
-if ($message == "oui") {
+$requete_verif_inscription = $pdo->prepare("SELECT es_email_viewcount FROM wp_es_emaillist WHERE es_email_mail=?");
+$requete_verif_inscription->execute([$email]);
+$resultat_verif_inscription = $requete_verif_inscription->fetchColumn();
+
+if ($resultat_verif_inscription == 1) {
+    echo '<br><div align="center">Le lien pour l\'inscription est déjà expiré!!!</div><br>';
+} elseif ($message == "oui") {
     echo '<div align="center"> Votre inscription est bien enregistrée. Un email de validation a été envoyé à votre adresse mail. Veuillez valider votre inscription avec le lien fourni dans ce mail.</div>';
 } else {
 
@@ -37,7 +44,6 @@ if ($message == "oui") {
         echo 'Veuillez vous inscrire avec le lien fourni dans le mail envoyé';
     } else {
         // Récupération guid d'email dans la BDD
-        $pdo = connexion_bdd();
         $requete_verif_guid = $pdo->prepare('SELECT es_email_guid FROM wp_es_emaillist WHERE es_email_mail=?');
         $requete_verif_guid->execute([$email]);
         $resultat_guid = $requete_verif_guid->fetch();
@@ -96,33 +102,33 @@ if ($message == "oui") {
                     <div align = "center">
                         <form method="POST">
                             <label class = "form-label-identifiant" for = "inscription">Identifiant <span class = "required" title = "Ce champ est requis.">*</span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "identifiant" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["identifiant"]) ? $_POST["identifiant"] : ""; ?>" /></div>
+                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "identifiant" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["identifiant"]) ? $_POST["identifiant"] : ""; ?>" /></div><br>
                             <label class = "form-label" for = "inscription">Nom <span class = "required" title = "Ce champ est requis.">*</span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "nom" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["nom"]) ? $_POST["nom"] : ""; ?>" /></div>
+                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "nom" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["nom"]) ? $_POST["nom"] : ""; ?>" /></div><br>
                             <label class = "form-label" for = "inscripton">Prenom <span class = "required" title = "Ce champ est requis.">*</span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "prenom" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["prenom"]) ? $_POST["prenom"] : ""; ?>"/></div>
+                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "prenom" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["prenom"]) ? $_POST["prenom"] : ""; ?>"/></div><br>
                             <label class = "form-label" for = "inscripton">Promotion <span class = "required" title = "Ce champ est requis.">*</span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "promotion" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["promotion"]) ? $_POST["promotion"] : ""; ?>"/></div>
+                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "promotion" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["promotion"]) ? $_POST["promotion"] : ""; ?>"/></div><br>
                             <label class = "form-label" for = "inscription">Adresse <span class = "required" title = "Ce champ est requis.">*</span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "adresse" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["adresse"]) ? $_POST["adresse"] : ""; ?>"/></div>
+                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "adresse" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["adresse"]) ? $_POST["adresse"] : ""; ?>"/></div><br>
                             <label class = "form-label" for = "inscription"> Complément adresse <span class = "k4"></span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text" maxlength = "128" name = "comp_adresse" size = "60" type = "text" value = "<?php echo isset($_POST["comp_adresse"]) ? $_POST["comp_adresse"] : ""; ?>"/></div>
+                            <div class = "form-input"><input id = "inscription" class = "form-text" maxlength = "128" name = "comp_adresse" size = "60" type = "text" value = "<?php echo isset($_POST["comp_adresse"]) ? $_POST["comp_adresse"] : ""; ?>"/></div><br>
                             <label class = "form-label" for = "inscription">Ville <span class = "required" title = "Ce champ est requis.">*</span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "ville" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["ville"]) ? $_POST["ville"] : ""; ?>"/></div>
+                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "ville" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["ville"]) ? $_POST["ville"] : ""; ?>"/></div><br>
                             <label class = "form-label" for = "inscription">Département <span class = "k4"></span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text" maxlength = "128" name = "departement" size = "60" type = "text" value = "<?php echo isset($_POST["departement"]) ? $_POST["departement"] : ""; ?>"/></div>
+                            <div class = "form-input"><input id = "inscription" class = "form-text" maxlength = "128" name = "departement" size = "60" type = "text" value = "<?php echo isset($_POST["departement"]) ? $_POST["departement"] : ""; ?>"/></div><br>
                             <label class = "form-label" for = "inscription">Code postal <span class = "required" title = "Ce champ est requis.">*</span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "code_postal" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["code_postal"]) ? $_POST["code_postal"] : ""; ?>"/></div>
+                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "code_postal" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["code_postal"]) ? $_POST["code_postal"] : ""; ?>"/></div><br>
                             <label class = "form-label" for = "inscription">Pays <span class = "required" title = "Ce champ est requis.">*</span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "pays" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["pays"]) ? $_POST["pays"] : ""; ?>"/></div>
+                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "pays" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["pays"]) ? $_POST["pays"] : ""; ?>"/></div><br>
                             <label class = "form-label" for = "inscription">Téléphone <span class = "required" title = "Ce champ est requis.">*</span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "telephone" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["telephone"]) ? $_POST["telephone"] : ""; ?>"/></div>
+                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "telephone" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["telephone"]) ? $_POST["telephone"] : ""; ?>"/></div><br>
                             <label class = "form-label-email" for = "inscription">Email <span title = "Ce champ est requis.">*</span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text required" required aria-required = "true" data-validate-required-message = "Ce champ est requis." data-validate-email-message = "S\'il vous plaît vérifier que votre adresse e-mail est selon le format suivant: name@gmail.com. Elle ne peut pas contenir de caractères spéciaux." type = "email" data-validate-type-message = "L\'email saisi est incorrect." id = "email" name = "email" size = "60" maxlength = "128" value = "<?php echo isset($_POST["email"]) ? $_POST["email"] : ""; ?>"/></div>
+                            <div class = "form-input"><input id = "inscription" class = "form-text required" required aria-required = "true" data-validate-required-message = "Ce champ est requis." data-validate-email-message = "S\'il vous plaît vérifier que votre adresse e-mail est selon le format suivant: name@gmail.com. Elle ne peut pas contenir de caractères spéciaux." type = "email" data-validate-type-message = "L\'email saisi est incorrect." id = "email" name = "email" size = "60" maxlength = "128" value = "<?php echo isset($_POST["email"]) ? $_POST["email"] : ""; ?>"/></div><br>
                             <label class = "form-label-email-verif" for = "inscription">Confirmer Email <span title = "Ce champ est requis.">*</span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text required" required aria-required = "true" data-validate-required-message = "Ce champ est requis." data-validate-email-message = "S\'il vous plaît vérifier que votre adresse e-mail est selon le format suivant: name@gmail.com. Elle ne peut pas contenir de caractères spéciaux." type = "email" data-validate-type-message = "L\'email saisi est incorrect." id = "verif_email" name = "verif_email" size = "60" maxlength = "128" value = "<?php echo isset($_POST["verif_email"]) ? $_POST["verif_email"] : ""; ?>"/></div>
+                            <div class = "form-input"><input id = "inscription" class = "form-text required" required aria-required = "true" data-validate-required-message = "Ce champ est requis." data-validate-email-message = "S\'il vous plaît vérifier que votre adresse e-mail est selon le format suivant: name@gmail.com. Elle ne peut pas contenir de caractères spéciaux." type = "email" data-validate-type-message = "L\'email saisi est incorrect." id = "verif_email" name = "verif_email" size = "60" maxlength = "128" value = "<?php echo isset($_POST["verif_email"]) ? $_POST["verif_email"] : ""; ?>"/></div><br>
                             <label class = "form-label-mdp" for = "inscription">Mot de passe <span class = "required" title = "Ce champ est requis.">*</span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "mdp" required = "" size = "60" type = "password" aria-required = "true" data-validate-required-message = "Ce champ est requis." /></div>
+                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "mdp" required = "" size = "60" type = "password" aria-required = "true" data-validate-required-message = "Ce champ est requis." /></div><br>
                             <label class = "form-label-mdp" for = "inscription">Confirmer Mot de passe <span class = "required" title = "Ce champ est requis.">*</span></label>
                             <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "verif_mdp" required = "" size = "60" type = "password" aria-required = "true" data-validate-required-message = "Ce champ est requis." /></div><br/>
                             <input type = "submit" name = "submit_inscription" value = "Valider"/>
@@ -144,8 +150,8 @@ if ($message == "oui") {
 if (isset($_POST['submit_inscription']) && $_POST['submit_inscription'] == "Valider") {
     $pdo = connexion_bdd();
     $requete_verif_mail = $pdo->prepare('SELECT COUNT(*) FROM wp_users WHERE user_email=?');
-    $email = $_POST['email'];
-    $requete_verif_mail->execute([$email]);
+    $email_ins = $_POST['email'];
+    $requete_verif_mail->execute([$email_ins]);
     $count_email = $requete_verif_mail->fetchColumn();
 
     $requete_verif_id = $pdo->prepare('SELECT COUNT(*) FROM wp_users WHERE user_login=?');
@@ -197,12 +203,12 @@ if (isset($_POST['submit_inscription']) && $_POST['submit_inscription'] == "Vali
 
             //ajout des infos dans le tableau wp_users
             $requete_ajout_membre = $pdo->prepare('INSERT INTO wp_users VALUES("",?,?,?,?,?,?,?,?,?)');
-            $requete_ajout_membre->execute([$identifiant, $user_pass, $user_nicename, $email, $user_url, $user_registered, $user_activation_key, $user_status, $display_name]);
+            $requete_ajout_membre->execute([$identifiant, $user_pass, $user_nicename, $email_ins, $user_url, $user_registered, $user_activation_key, $user_status, $display_name]);
 
             //ajout des infos dans le tableau wp_usermeta
             // cherche l'utilisateur id
             $requete_cherche_userID = $pdo->prepare('SELECT ID FROM wp_users WHERE user_email = ?');
-            $requete_cherche_userID->execute([$email]);
+            $requete_cherche_userID->execute([$email_ins]);
             $resultat_userID = $requete_cherche_userID->fetch();
             $userID = $resultat_userID["ID"];
 
@@ -232,9 +238,12 @@ if (isset($_POST['submit_inscription']) && $_POST['submit_inscription'] == "Vali
             $subject = "Valider votre inscription Rapport de stage M2 CCI Tours";
             $txt = "Bonjour,\n" .
                     "Bienvenue à l'espace Rapport de stage Master CCI Tours. Merci de valider votre inscription avec le lien ci-dessous: " .
-                    "http://localhost/wordpress/validation/?email=$email&activation_key=$user_activation_key";
+                    "http://localhost/wordpress/validation/?email=$email_ins&activation_key=$user_activation_key";
             $headers = "From: Master CCI Tours";
-            mail($email, $subject, $txt, $headers);
+            mail($email_ins, $subject, $txt, $headers);
+
+            $requete_annule_inscription = $pdo->prepare("UPDATE wp_es_emaillist SET es_email_viewcount=1 WHERE es_email_mail =?");
+            $requete_annule_inscription->execute([$email]);
 
             redirect("/wordpress/inscription/?message=oui");
         }
