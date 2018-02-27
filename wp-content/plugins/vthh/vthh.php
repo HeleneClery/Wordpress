@@ -1,66 +1,68 @@
 <?php
+
 /**
- * Plugin Name: VTHH
+ * Plugin Name: Outils admin
  * Plugin URI:
  * Description: Ajout des fonctions.
- * Author: Your VTHH
+ * Author: VTHH 2017-2018
  * Author URI: 
  * Version: 1.0
  */
- 
-add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
-function my_wp_nav_menu_args( $args = '' ) {
-if( is_user_logged_in() && (!current_user_can('administrator') | !is_admin())) { 
-    $args['menu'] = 'connecté';
-}
-if (!is_user_logged_in()) {
-    $args['menu'] = 'non-connecté';
-}
-if (current_user_can('administrator') | is_admin()) {
-	$args['menu'] = 'admin';
- }
+
+
+// afficher le menu correspondant au statut de l'utilisateur: non-connecté, connecté et admin
+add_filter('wp_nav_menu_args', 'my_wp_nav_menu_args');
+function my_wp_nav_menu_args($args = '') {
+    if (is_user_logged_in() && (!current_user_can('administrator') | !is_admin())) {
+        $args['menu'] = 'connecté';
+    }
+    if (!is_user_logged_in()) {
+        $args['menu'] = 'non-connecté';
+    }
+    if (current_user_can('administrator') | is_admin()) {
+        $args['menu'] = 'admin';
+    }
     return $args;
 }
 
 
-
-add_action('init','custom_login');
-function custom_login(){
- global $pagenow;
- if( 'wp-login.php' == $pagenow && $_GET['action']!="logout") {
-  wp_redirect('/wordpress/');
-  exit();
- }
+// restreindre l'accès au wp-admin 
+add_action('init', 'custom_login');
+function custom_login() {
+    global $pagenow;
+    if ('wp-login.php' == $pagenow && $_GET['action'] != "logout") {
+        wp_redirect('/wordpress/');
+        exit();
+    }
 }
 
 
-
-
-add_action( 'template_redirect', 'redirect_to_specific_page' );
+// restreindre l'accès aux pages "Depot rapport", "Envoi email"
+add_action('template_redirect', 'redirect_to_specific_page');
 function redirect_to_specific_page() {
-if ( is_page(27) && ! is_user_logged_in() ) {
-auth_redirect(); 
-  }
-if (is_page(80) && !is_admin() && !current_user_can('administrator')) {
-	auth_redirect();
-}
-}
-
-
-
-add_action('user_register','changer_nom_affiche');
-function changer_nom_affiche( $user_id ) {
-    $info = get_userdata( $user_id );
-	$args = array(
-		'ID' => $user_id,
-		'display_name' => $info->first_name . ' ' . $info->last_name
-	);
-    wp_update_user( $args );
+    if (is_page(27) && !is_user_logged_in()) {
+        auth_redirect();
+    }
+    if (is_page(80) && !is_admin() && !current_user_can('administrator')) {
+        auth_redirect();
+    }
 }
 
 
+// modifier le nom d'utilisateur à Nom + prénom
+add_action('user_register', 'changer_nom_affiche');
+function changer_nom_affiche($user_id) {
+    $info = get_userdata($user_id);
+    $args = array(
+        'ID' => $user_id,
+        'display_name' => $info->first_name . ' ' . $info->last_name
+    );
+    wp_update_user($args);
+}
 
-function redirect($url){
+
+// définir la méthode redirect pour rediriger une page 
+function redirect($url) {
     $string = '<script type="text/javascript">';
     $string .= 'window.location = "' . $url . '"';
     $string .= '</script>';
@@ -68,27 +70,39 @@ function redirect($url){
 }
 
 
-
-add_filter( 'wp_authenticate_user', 'verifier_utilisateur', 1 );
-function verifier_utilisateur( $user ) {
+// restreindre la connexion des utilisateurs qui n'ont pas validé l'inscription
+add_filter('wp_authenticate_user', 'verifier_utilisateur', 1);
+function verifier_utilisateur($user) {
     if (is_wp_error($user)) {
         return $user;
     }
-	$user_id = get_current_user_id();
-    $verif = get_user_meta($user->ID, 'verif', true );
-	$level = get_user_meta($user->ID,'wp_user_level',true);
-	if ( $verif != "true" && $level != 10) {
-		return new WP_ERROR();
+    $verif = get_user_meta($user->ID, 'verif', true);
+    $level = get_user_meta($user->ID, 'wp_m2ccitours_user_level', true);
+    if ($verif != "true" && $level != 10) {
+        return new WP_ERROR();
     }
     return $user;
 }
 
 
-
+// cacher la barre d'admin
 add_action('after_setup_theme', 'remove_admin_bar');
- 
 function remove_admin_bar() {
-if (!current_user_can('administrator') && !is_admin()) {
-  show_admin_bar(false);
+    if (!current_user_can('administrator') && !is_admin()) {
+        show_admin_bar(false);
+    }
 }
+
+
+// afficher le nom d'utilisateur sur le menu
+add_filter('the_title', 'modif_titre_menu');
+function modif_titre_menu($title) {
+    $user = wp_get_current_user();
+    $name = $user->display_name;
+    if (!is_admin() && !current_user_can('administrator') && $title == '[Compte]') {
+        if (is_user_logged_in()) {
+            $title = "Bonjour, " . $name;
+        }
+    }
+    return $title;
 }

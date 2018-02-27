@@ -1,0 +1,5 @@
+# désactiver l'exécution des fichiers PHP dans le répertoire
+<Files *.php>
+deny from all
+</Files>
+

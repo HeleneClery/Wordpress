@@ -10,3 +10,31 @@ RewriteRule . /wordpress/index.php [L]
 </IfModule>
 
 # END WordPress
+
+
+# filtrer les IP pour l'espace admin
+AuthUserFile /dev/null
+AuthGroupFile /dev/null
+AuthName "WordPress Admin Access Control"
+AuthType Basic
+<LIMIT GET>
+order deny,allow
+deny from all
+# whitelist admin TP address
+allow from xx.xx.xx.xxx
+# whitelist admin IP address
+allow from xx.xx.xx.xxx
+</LIMIT>
+
+
+# désactiver la navigation dans les répertoires
+Options -Indexes
+
+
+# protecter le fichier wp-config.php
+<files wp-config.php>
+order allow,deny
+deny from all
+</files>
+
+

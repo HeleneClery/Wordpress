@@ -27,7 +27,7 @@ $guid = $_GET['guid'];
 $message = $_GET['message'];
 $pdo = connexion_bdd();
 
-$requete_verif_inscription = $pdo->prepare("SELECT es_email_viewcount FROM wp_es_emaillist WHERE es_email_mail=?");
+$requete_verif_inscription = $pdo->prepare("SELECT es_email_viewcount FROM wp_m2ccitours_es_emaillist WHERE es_email_mail=?");
 $requete_verif_inscription->execute([$email]);
 $resultat_verif_inscription = $requete_verif_inscription->fetchColumn();
 
@@ -44,7 +44,7 @@ if ($resultat_verif_inscription == 1) {
         echo 'Veuillez vous inscrire avec le lien fourni dans le mail envoyé';
     } else {
         // Récupération guid d'email dans la BDD
-        $requete_verif_guid = $pdo->prepare('SELECT es_email_guid FROM wp_es_emaillist WHERE es_email_mail=?');
+        $requete_verif_guid = $pdo->prepare('SELECT es_email_guid FROM wp_m2ccitours_es_emaillist WHERE es_email_mail=?');
         $requete_verif_guid->execute([$email]);
         $resultat_guid = $requete_verif_guid->fetch();
         $guid_bdd = $resultat_guid["es_email_guid"];
@@ -108,7 +108,7 @@ if ($resultat_verif_inscription == 1) {
                             <label class = "form-label" for = "inscripton">Prenom <span class = "required" title = "Ce champ est requis.">*</span></label>
                             <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "prenom" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["prenom"]) ? $_POST["prenom"] : ""; ?>"/></div><br>
                             <label class = "form-label" for = "inscripton">Promotion <span class = "required" title = "Ce champ est requis.">*</span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "promotion" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["promotion"]) ? $_POST["promotion"] : ""; ?>"/></div><br>
+                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "promotion" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." <?php if (isset($_POST["promotion"])) { echo 'value = '.$_POST['promotion'].'"';} ?> placeholder="Année d'obtention du diplôme"/></div><br>
                             <label class = "form-label" for = "inscription">Adresse <span class = "required" title = "Ce champ est requis.">*</span></label>
                             <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "adresse" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["adresse"]) ? $_POST["adresse"] : ""; ?>"/></div><br>
                             <label class = "form-label" for = "inscription"> Complément adresse <span class = "k4"></span></label>
@@ -128,7 +128,7 @@ if ($resultat_verif_inscription == 1) {
                             <label class = "form-label-email-verif" for = "inscription">Confirmer Email <span title = "Ce champ est requis.">*</span></label>
                             <div class = "form-input"><input id = "inscription" class = "form-text required" required aria-required = "true" data-validate-required-message = "Ce champ est requis." data-validate-email-message = "S\'il vous plaît vérifier que votre adresse e-mail est selon le format suivant: name@gmail.com. Elle ne peut pas contenir de caractères spéciaux." type = "email" data-validate-type-message = "L\'email saisi est incorrect." id = "verif_email" name = "verif_email" size = "60" maxlength = "128" value = "<?php echo isset($_POST["verif_email"]) ? $_POST["verif_email"] : ""; ?>"/></div><br>
                             <label class = "form-label-mdp" for = "inscription">Mot de passe <span class = "required" title = "Ce champ est requis.">*</span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "mdp" required = "" size = "60" type = "password" aria-required = "true" data-validate-required-message = "Ce champ est requis." /></div><br>
+                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "mdp" required = "" size = "60" type = "password" aria-required = "true" data-validate-required-message = "Ce champ est requis." pattern=".{5,10}" required title="Le mot de passe doit contenir au moins 6 caractères"/></div><br>
                             <label class = "form-label-mdp" for = "inscription">Confirmer Mot de passe <span class = "required" title = "Ce champ est requis.">*</span></label>
                             <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "verif_mdp" required = "" size = "60" type = "password" aria-required = "true" data-validate-required-message = "Ce champ est requis." /></div><br/>
                             <input type = "submit" name = "submit_inscription" value = "Valider"/>
@@ -149,12 +149,12 @@ if ($resultat_verif_inscription == 1) {
 // traitement du formulaire
 if (isset($_POST['submit_inscription']) && $_POST['submit_inscription'] == "Valider") {
     $pdo = connexion_bdd();
-    $requete_verif_mail = $pdo->prepare('SELECT COUNT(*) FROM wp_users WHERE user_email=?');
+    $requete_verif_mail = $pdo->prepare('SELECT COUNT(*) FROM wp_m2ccitours_users WHERE user_email=?');
     $email_ins = $_POST['email'];
     $requete_verif_mail->execute([$email_ins]);
     $count_email = $requete_verif_mail->fetchColumn();
 
-    $requete_verif_id = $pdo->prepare('SELECT COUNT(*) FROM wp_users WHERE user_login=?');
+    $requete_verif_id = $pdo->prepare('SELECT COUNT(*) FROM wp_m2ccitours_users WHERE user_login=?');
     $identifiant = $_POST['identifiant'];
     $requete_verif_id->execute([$identifiant]);
     $count_id = $requete_verif_id->fetchColumn();
@@ -177,9 +177,9 @@ if (isset($_POST['submit_inscription']) && $_POST['submit_inscription'] == "Vali
 
 // ajouter les infos d'utilisateur dans la BD
         else {
-            // préparation pour la table wp_users (infos importantes pour la connexion)
+            // préparation pour la table wp_m2ccitours_users (infos importantes pour la connexion)
             // verifier si le mail et l'identifiant entré est déjà enregistré dans la BDD
-            // préparation des infos pour la table wp_users
+            // préparation des infos pour la table wp_m2ccitours_users
 
             $user_pass = password_hash($_POST['mdp'], PASSWORD_DEFAULT);
             $user_nicename = strtolower($identifiant);
@@ -189,7 +189,7 @@ if (isset($_POST['submit_inscription']) && $_POST['submit_inscription'] == "Vali
             $user_status = 0;
             $display_name = $_POST['nom'] . "\n" . $_POST['prenom'];
 
-            // préparation pour la table wp_usermeta
+            // préparation pour la table wp_m2ccitours_usermeta
             $nom = $_POST['nom'];
             $prenom = $_POST['prenom'];
             $promotion = $_POST['promotion'];
@@ -201,48 +201,50 @@ if (isset($_POST['submit_inscription']) && $_POST['submit_inscription'] == "Vali
             $pays = $_POST['pays'];
             $telephone = $_POST['telephone'];
 
-            //ajout des infos dans le tableau wp_users
-            $requete_ajout_membre = $pdo->prepare('INSERT INTO wp_users VALUES("",?,?,?,?,?,?,?,?,?)');
+            //ajout des infos dans le tableau wp_m2ccitours_users
+            $requete_ajout_membre = $pdo->prepare('INSERT INTO wp_m2ccitours_users VALUES("",?,?,?,?,?,?,?,?,?)');
             $requete_ajout_membre->execute([$identifiant, $user_pass, $user_nicename, $email_ins, $user_url, $user_registered, $user_activation_key, $user_status, $display_name]);
 
-            //ajout des infos dans le tableau wp_usermeta
+            //ajout des infos dans le tableau wp_m2ccitours_usermeta
             // cherche l'utilisateur id
-            $requete_cherche_userID = $pdo->prepare('SELECT ID FROM wp_users WHERE user_email = ?');
+            $requete_cherche_userID = $pdo->prepare('SELECT ID FROM wp_m2ccitours_users WHERE user_email = ?');
             $requete_cherche_userID->execute([$email_ins]);
             $resultat_userID = $requete_cherche_userID->fetch();
             $userID = $resultat_userID["ID"];
 
-            $requete_ajout_nom = $pdo->prepare('INSERT INTO wp_usermeta VALUES("",?,"last_name",?)');
+            $requete_ajout_nom = $pdo->prepare('INSERT INTO wp_m2ccitours_usermeta VALUES("",?,"last_name",?)');
             $requete_ajout_nom->execute([$userID, $nom]);
-            $requete_ajout_prenom = $pdo->prepare('INSERT INTO wp_usermeta VALUES("",?,"first_name",?)');
+            $requete_ajout_prenom = $pdo->prepare('INSERT INTO wp_m2ccitours_usermeta VALUES("",?,"first_name",?)');
             $requete_ajout_prenom->execute([$userID, $prenom]);
-            $requete_ajout_promotion = $pdo->prepare('INSERT INTO wp_usermeta VALUES("",?,"promotion",?)');
+            $requete_ajout_promotion = $pdo->prepare('INSERT INTO wp_m2ccitours_usermeta VALUES("",?,"promotion",?)');
             $requete_ajout_promotion->execute([$userID, $promotion]);
-            $requete_ajout_adresse = $pdo->prepare('INSERT INTO wp_usermeta VALUES("",?,"addr1",?)');
+            $requete_ajout_adresse = $pdo->prepare('INSERT INTO wp_m2ccitours_usermeta VALUES("",?,"addr1",?)');
             $requete_ajout_adresse->execute([$userID, $adresse]);
-            $requete_ajout_compadresse = $pdo->prepare('INSERT INTO wp_usermeta VALUES("",?,"addr2",?)');
+            $requete_ajout_compadresse = $pdo->prepare('INSERT INTO wp_m2ccitours_usermeta VALUES("",?,"addr2",?)');
             $requete_ajout_compadresse->execute([$userID, $comp_adresse]);
-            $requete_ajout_ville = $pdo->prepare('INSERT INTO wp_usermeta VALUES("",?,"city",?)');
+            $requete_ajout_ville = $pdo->prepare('INSERT INTO wp_m2ccitours_usermeta VALUES("",?,"city",?)');
             $requete_ajout_ville->execute([$userID, $ville]);
-            $requete_ajout_departement = $pdo->prepare('INSERT INTO wp_usermeta VALUES("",?,"thestate",?)');
+            $requete_ajout_departement = $pdo->prepare('INSERT INTO wp_m2ccitours_usermeta VALUES("",?,"thestate",?)');
             $requete_ajout_departement->execute([$userID, $departement]);
-            $requete_ajout_codepostal = $pdo->prepare('INSERT INTO wp_usermeta VALUES("",?,"zip",?)');
+            $requete_ajout_codepostal = $pdo->prepare('INSERT INTO wp_m2ccitours_usermeta VALUES("",?,"zip",?)');
             $requete_ajout_codepostal->execute([$userID, $code_postal]);
-            $requete_ajout_pays = $pdo->prepare('INSERT INTO wp_usermeta VALUES("",?,"country",?)');
+            $requete_ajout_pays = $pdo->prepare('INSERT INTO wp_m2ccitours_usermeta VALUES("",?,"country",?)');
             $requete_ajout_pays->execute([$userID, $pays]);
-            $requete_ajout_telephone = $pdo->prepare('INSERT INTO wp_usermeta VALUES("",?,"phone1",?)');
+            $requete_ajout_telephone = $pdo->prepare('INSERT INTO wp_m2ccitours_usermeta VALUES("",?,"phone1",?)');
             $requete_ajout_telephone->execute([$userID, $telephone]);
-            $requete_ajout_verif = $pdo->prepare('INSERT INTO wp_usermeta VALUES("",?,"verif","false")');
+            $requete_ajout_verif = $pdo->prepare('INSERT INTO wp_m2ccitours_usermeta VALUES("",?,"verif","false")');
             $requete_ajout_verif->execute([$userID]);
 
             $subject = "Valider votre inscription Rapport de stage M2 CCI Tours";
-            $txt = "Bonjour,\n" .
-                    "Bienvenue à l'espace Rapport de stage Master CCI Tours. Merci de valider votre inscription avec le lien ci-dessous: " .
-                    "http://localhost/wordpress/validation/?email=$email_ins&activation_key=$user_activation_key";
+            $txt = "Bonjour, \n" .
+                    "Bienvenue à l'espace Rapport de stage Master CCI Tours. \n".
+                    "Merci de valider votre inscription avec le lien ci-dessous: \n" .
+                    "http://localhost/wordpress/validation/?email=$email_ins&activation_key=$user_activation_key \n".
+                    "A bientôt!";
             $headers = "From: Master CCI Tours";
             mail($email_ins, $subject, $txt, $headers);
 
-            $requete_annule_inscription = $pdo->prepare("UPDATE wp_es_emaillist SET es_email_viewcount=1 WHERE es_email_mail =?");
+            $requete_annule_inscription = $pdo->prepare("UPDATE wp_m2ccitours_es_emaillist SET es_email_viewcount=1 WHERE es_email_mail =?");
             $requete_annule_inscription->execute([$email]);
 
             redirect("/wordpress/inscription/?message=oui");

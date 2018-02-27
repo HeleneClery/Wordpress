@@ -29,9 +29,9 @@ $resultatListe = $pdo->query($requeteListe);
     <style>
         div.a {
             font-size: 12pt;
-            width: 600px;
+            width: 550px;
             text-align: justify;
-            margin-top: 40px;
+            margin-top: 20px;
         }
         div.b {
             width: 550px;
@@ -39,13 +39,14 @@ $resultatListe = $pdo->query($requeteListe);
             float: left;
         }
         form {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
         select {
             height: 38px;
             line-height: 38px;
             width: 220px;
             font-size: 13pt;
+            font-weight: bold;
         }
         label {
             width: 200px;
@@ -69,7 +70,7 @@ $resultatListe = $pdo->query($requeteListe);
             Le statut des étudiants doit être "Confirmé".<br>
             Choisir le nom du groupe (par exemple: CCI 2017).<br>
             Vérifier la liste ajouté.
-            <li>On peut envoyer le mail à une liste ou à une adresse individuelle </li>
+            <li>On peut envoyer le mail à une liste ou à une adresse individuelle (qui est déjà ajoutée dans la liste) </li>
         </ul>
         <br>
     </div>
@@ -132,9 +133,13 @@ function envoyer_mail($email) {
             "A bientôt!";
     $headers = "De: Master CCI Tours";
     if (mail($email, $sujet, $texte, $headers)) {
-        echo "Envoyé à " . $email . "<br/>";
+        echo "<HTML>";
+        echo "<div class='d'>Envoyé à $email </div><br/>";
+        echo "<style> div.d{font-size:13pt; color:#50D050;}</style></HTML>";
     } else {
-        echo "Problème d'envoi email"."<br>";
+        echo "<HTML>";
+        echo "<div class='c'>Problème d'envoi email à $email </div><br>";
+        echo "<style> div.c{font-size:13pt; color:red;}</style></HTML>";
     }
 }
 ?>
