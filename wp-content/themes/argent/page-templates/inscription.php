@@ -31,13 +31,16 @@ $requete_verif_inscription = $pdo->prepare("SELECT es_email_viewcount FROM wp_m2
 $requete_verif_inscription->execute([$email]);
 $resultat_verif_inscription = $requete_verif_inscription->fetchColumn();
 
+// Vérifier si le lien d'inscription est déjà utilisé
 if ($resultat_verif_inscription == 1) {
     echo '<br><div align="center">Le lien pour l\'inscription est déjà expiré!!!</div><br>';
+
+// Afficher le message après avoir validé le formulaire d'inscription    
 } elseif ($message == "oui") {
     echo '<div align="center"> Votre inscription est bien enregistrée. Un email de validation a été envoyé à votre adresse mail. Veuillez valider votre inscription avec le lien fourni dans ce mail.</div>';
 } else {
 
-// Vérification s'il y a email dans le lien
+// Vérifier s'il y a email dans le lien pour l'inscription
     if ($email == null) {
         echo 'Cette espace est réservée aux étudiants CCI Tours de la promotion actuelle. Si vous êtes un ancien étudiant et vous êtes intéressé par cette page, veuillez contacter xxx@yyy.com';
     } elseif ($guid == null) {
@@ -49,6 +52,7 @@ if ($resultat_verif_inscription == 1) {
         $resultat_guid = $requete_verif_guid->fetch();
         $guid_bdd = $resultat_guid["es_email_guid"];
 
+        // Vérifier si le guid dans le lien = guid dans la base de données
         if ($guid == $guid_bdd) {
             ?>
             <!--formulaire d'inscription-->
@@ -108,7 +112,9 @@ if ($resultat_verif_inscription == 1) {
                             <label class = "form-label" for = "inscripton">Prenom <span class = "required" title = "Ce champ est requis.">*</span></label>
                             <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "prenom" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["prenom"]) ? $_POST["prenom"] : ""; ?>"/></div><br>
                             <label class = "form-label" for = "inscripton">Promotion <span class = "required" title = "Ce champ est requis.">*</span></label>
-                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "promotion" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." <?php if (isset($_POST["promotion"])) { echo 'value = "'.$_POST['promotion'].'"';} ?> placeholder="Année d'obtention du diplôme"/></div><br>
+                            <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "promotion" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." <?php if (isset($_POST["promotion"])) {
+                echo 'value = "' . $_POST['promotion'] . '"';
+            } ?> placeholder="Année d'obtention du diplôme"/></div><br>
                             <label class = "form-label" for = "inscription">Adresse <span class = "required" title = "Ce champ est requis.">*</span></label>
                             <div class = "form-input"><input id = "inscription" class = "form-text required" maxlength = "128" name = "adresse" required = "" size = "60" type = "text" aria-required = "true" data-validate-required-message = "Ce champ est requis." value = "<?php echo isset($_POST["adresse"]) ? $_POST["adresse"] : ""; ?>"/></div><br>
                             <label class = "form-label" for = "inscription"> Complément adresse <span class = "k4"></span></label>
@@ -159,11 +165,14 @@ if (isset($_POST['submit_inscription']) && $_POST['submit_inscription'] == "Vali
     $requete_verif_id->execute([$identifiant]);
     $count_id = $requete_verif_id->fetchColumn();
 
+    // message si l'identifiant et l'adresse mail sont déjà utilisés
     if ($count_id != 0 && $count_email != 0) {
         message_id();
         message_email();
+    // message si l'identifiant est déjà utilisé
     } elseif ($count_id != 0) {
         message_id();
+    // message si l'adresse mail est déjà utilisée  
     } elseif ($count_email != 0) {
         message_email();
     } else {
@@ -205,13 +214,13 @@ if (isset($_POST['submit_inscription']) && $_POST['submit_inscription'] == "Vali
             $requete_ajout_membre = $pdo->prepare('INSERT INTO wp_m2ccitours_users VALUES("",?,?,?,?,?,?,?,?,?)');
             $requete_ajout_membre->execute([$identifiant, $user_pass, $user_nicename, $email_ins, $user_url, $user_registered, $user_activation_key, $user_status, $display_name]);
 
-            //ajout des infos dans le tableau wp_m2ccitours_usermeta
             // cherche l'utilisateur id
             $requete_cherche_userID = $pdo->prepare('SELECT ID FROM wp_m2ccitours_users WHERE user_email = ?');
             $requete_cherche_userID->execute([$email_ins]);
             $resultat_userID = $requete_cherche_userID->fetch();
             $userID = $resultat_userID["ID"];
 
+            //ajout des infos dans le tableau wp_m2ccitours_usermeta
             $requete_ajout_nom = $pdo->prepare('INSERT INTO wp_m2ccitours_usermeta VALUES("",?,"last_name",?)');
             $requete_ajout_nom->execute([$userID, $nom]);
             $requete_ajout_prenom = $pdo->prepare('INSERT INTO wp_m2ccitours_usermeta VALUES("",?,"first_name",?)');
@@ -235,23 +244,26 @@ if (isset($_POST['submit_inscription']) && $_POST['submit_inscription'] == "Vali
             $requete_ajout_verif = $pdo->prepare('INSERT INTO wp_m2ccitours_usermeta VALUES("",?,"verif","false")');
             $requete_ajout_verif->execute([$userID]);
 
+            // Envoyer l'email pour la validation. L'utilisateur ne peut pas connecter avant de valider le lien fourni
             $subject = "Valider votre inscription Rapport de stage M2 CCI Tours";
             $txt = "Bonjour, \n" .
-                    "Bienvenue à l'espace Rapport de stage Master CCI Tours. \n".
+                    "Bienvenue à l'espace Rapport de stage Master CCI Tours. \n" .
                     "Merci de valider votre inscription avec le lien ci-dessous: \n" .
-                    "http://localhost/wordpress/validation/?email=$email_ins&activation_key=$user_activation_key \n".
+                    "http://localhost/wordpress/validation/?email=$email_ins&activation_key=$user_activation_key \n" .
                     "A bientôt!";
-            $headers = "From: Master CCI Tours";
-            mail($email_ins, $subject, $txt, $headers);
+            $headers = "De: Master CCI Tours";
+            wp_mail($email_ins, $subject, $txt, $headers);
 
             $requete_annule_inscription = $pdo->prepare("UPDATE wp_m2ccitours_es_emaillist SET es_email_viewcount=1 WHERE es_email_mail =?");
             $requete_annule_inscription->execute([$email]);
-
+            
+            // Afficher le message après avoir validé le formulaire d'inscription   
             redirect("/wordpress/inscription/?message=oui");
         }
     }
 }
 
+// Afficher le message si l'identifiant est déjà utilisé pour l'inscription
 function message_id() {
     $message_Id = "Cet identifiant est déjà utilisé pour l\'inscription. Merci de choisir un autre identifiant";
     echo '<script>alert("' . $message_Id . '")</script>';
@@ -263,6 +275,7 @@ function message_id() {
 //    exit();
 }
 
+// Afficher le message si l'adresse mail est déjà utilisée pour l'inscription
 function message_email() {
     $message_email = "Cette adresse email est déjà utilisée pour l\'inscription. Merci de choisir un autre adresse mail";
     echo '<script>alert("' . $message_email . '")</script>';
@@ -273,6 +286,7 @@ function message_email() {
     echo '<script type="text/javascript"> erreur("erreur_email","' . $message_email . '")</script>';
 }
 
+// Afficher le message si les 2 adresses mail ne correspondent pas
 function message_verif_email() {
     $message_confirm_email = "Les deux emails ne correspondent pas";
     echo '<script>alert("' . $message_confirm_email . '")</script>';
@@ -283,6 +297,7 @@ function message_verif_email() {
     echo '<script type="text/javascript"> erreur("erreur_verif_email","' . $message_confirm_email . '")</script>';
 }
 
+// Afficher le message si les 2 mots de passe ne correspondent pas
 function message_verif_mdp() {
     $message_confirm_mdp = "Les deux mots de passe ne correspondent pas";
     echo '<script>alert("' . $message_confirm_mdp . '")</script>';

@@ -71,6 +71,9 @@ The portfolio archive page can be found at http://mygroovysite.wordpress.com/por
 
 == Changelog ==
 
+= 2 March 2018 =
+* Use wp_kses_post rather than wp_filter_post_kses.
+
 = 26 July 2017 =
 * Rework '[comment author] says' string to include a translation function, and replace wp_kses_post with just wp_kses and specific markup.
 

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress.com - Themes - Argent package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-03-23 06:03:23+0000\n"
+"PO-Revision-Date: 2017-07-27 02:02:17+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,13 +11,17 @@ msgstr ""
 "Language: de\n"
 "Project-Id-Version: WordPress.com - Themes - Argent\n"
 
-#: inc/wpcom-colors.php:146
-msgid "Widget Area Background"
-msgstr "Hintergrund für Widget-Bereich"
+#: inc/template-tags.php:181
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">sagt:</span>"
 
 #: inc/wpcom-colors.php:141
 msgid "Main Accent"
 msgstr "Hauptakzent"
+
+#: inc/wpcom-colors.php:146
+msgid "Widget Area Background"
+msgstr "Hintergrund für Widget-Bereich"
 
 #: inc/wpcom-colors.php:97
 msgid "Links"
@@ -32,10 +36,6 @@ msgstr "Text"
 msgid "Tagged"
 msgstr "Verschlagwortet mit"
 
-#: content-portfolio-archive.php:30
-msgid "Portfolio navigation"
-msgstr "Referenzen Navigation"
-
 #: content-portfolio-archive.php:29
 msgid "Newer projects"
 msgstr "Neuere Projekte"
@@ -43,6 +43,10 @@ msgstr "Neuere Projekte"
 #: content-portfolio-archive.php:28 inc/jetpack.php:39
 msgid "Older projects"
 msgstr "Ältere Projekte"
+
+#: content-portfolio-archive.php:30
+msgid "Portfolio navigation"
+msgstr "Referenzen Navigation"
 
 #: content-front-portfolio.php:9
 msgid "Recent Projects"
@@ -77,108 +81,108 @@ msgstr "Argent"
 msgid "Search Results for: %s"
 msgstr "Suchergebnisse für: %s"
 
-#: inc/template-tags.php:272
+#: inc/template-tags.php:283
 msgid "Projects"
 msgstr "Projekte"
 
-#: inc/template-tags.php:250
+#: inc/template-tags.php:261
 msgid "Archives"
 msgstr "Archive"
 
 #. translators: 1: Taxonomy singular name, 2: Current taxonomy term
-#: inc/template-tags.php:248
+#: inc/template-tags.php:259
 msgid "%1$s: %2$s"
 msgstr "%1$s @ %2$s"
 
-#: inc/template-tags.php:244
+#: inc/template-tags.php:255
 msgid "Archives: %s"
 msgstr "Archive: %s"
 
-#: inc/template-tags.php:241
+#: inc/template-tags.php:252
 msgctxt "post format archive title"
 msgid "Chats"
 msgstr "Chats"
 
-#: inc/template-tags.php:239
+#: inc/template-tags.php:250
 msgctxt "post format archive title"
 msgid "Audio"
 msgstr "Audio"
 
-#: inc/template-tags.php:237
+#: inc/template-tags.php:248
 msgctxt "post format archive title"
 msgid "Statuses"
 msgstr "Status"
 
-#: inc/template-tags.php:235
+#: inc/template-tags.php:246
 msgctxt "post format archive title"
 msgid "Links"
 msgstr "Links"
 
-#: inc/template-tags.php:233
+#: inc/template-tags.php:244
 msgctxt "post format archive title"
 msgid "Quotes"
 msgstr "Zitate"
 
-#: inc/template-tags.php:231
+#: inc/template-tags.php:242
 msgctxt "post format archive title"
 msgid "Videos"
 msgstr "Videos"
 
-#: inc/template-tags.php:229
+#: inc/template-tags.php:240
 msgctxt "post format archive title"
 msgid "Images"
 msgstr "Bilder"
 
-#: inc/template-tags.php:227
+#: inc/template-tags.php:238
 msgctxt "post format archive title"
 msgid "Galleries"
 msgstr "Galerien"
 
-#: inc/template-tags.php:225
+#: inc/template-tags.php:236
 msgctxt "post format archive title"
 msgid "Asides"
 msgstr "Kurzmitteilungen"
 
-#: inc/template-tags.php:222
+#: inc/template-tags.php:233
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr "j. F Y"
 
-#: inc/template-tags.php:222
+#: inc/template-tags.php:233
 msgid "Day: %s"
 msgstr "Tag: %s"
 
-#: inc/template-tags.php:220
+#: inc/template-tags.php:231
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
 
-#: inc/template-tags.php:220
+#: inc/template-tags.php:231
 msgid "Month: %s"
 msgstr "Monat: %s"
 
-#: inc/template-tags.php:218
+#: inc/template-tags.php:229
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
-#: inc/template-tags.php:218
+#: inc/template-tags.php:229
 msgid "Year: %s"
 msgstr "Jahr: %s"
 
-#: inc/template-tags.php:216
+#: inc/template-tags.php:227
 msgid "Author: %s"
 msgstr "Autor: %s"
 
-#: inc/template-tags.php:214
+#: inc/template-tags.php:225
 msgid "Tag: %s"
 msgstr "Tag: %s"
 
-#: inc/template-tags.php:212
+#: inc/template-tags.php:223
 msgid "Category: %s"
 msgstr "Kategorie: %s"
 
-#: inc/template-tags.php:182
+#: inc/template-tags.php:193
 msgid "Your comment is awaiting moderation."
 msgstr "Dein Kommentar muss noch freigeschaltet werden."
 
@@ -203,15 +207,15 @@ msgstr "1 Kommentar"
 msgid "Leave a comment"
 msgstr "Hinterlasse einen Kommentar"
 
-#: inc/template-tags.php:103
-msgctxt "post author"
-msgid "by %s"
-msgstr "von %s"
-
 #: inc/template-tags.php:98
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr "Veröffentlicht am %s"
+
+#: inc/template-tags.php:103
+msgctxt "post author"
+msgid "by %s"
+msgstr "von %s"
 
 #: inc/template-tags.php:68
 msgid "Post navigation"
@@ -241,13 +245,13 @@ msgstr "Seiten:"
 msgid "Number of Projects to display"
 msgstr "Anzahl anzuzeigender Projekte"
 
-#: inc/customizer.php:43
-msgid "Portfolio Section Title"
-msgstr "Überschrift des Referenz-Bereichs"
-
 #: inc/customizer.php:32
 msgid "Show Portfolio Section"
 msgstr "Referenz-Bereich anzeigen"
+
+#: inc/customizer.php:43
+msgid "Portfolio Section Title"
+msgstr "Überschrift des Referenz-Bereichs"
 
 #: inc/customizer.php:23
 msgid "Front Page Portfolio section settings"
@@ -269,15 +273,19 @@ msgstr "Zum Inhalt springen"
 msgid "Read more <span class=\"screen-reader-text\">%1$s</span>"
 msgstr "Weiterlesen <span class=\"screen-reader-text\">%1s</span>"
 
-#: functions.php:163
-msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
-msgid "no-subset"
-msgstr "no-subset"
+#: functions.php:123
+msgid "Footer Three"
+msgstr "Footer Drei"
 
 #: functions.php:155
 msgctxt "Alegreya font: on or off"
 msgid "on"
 msgstr "on"
+
+#: functions.php:163
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr "no-subset"
 
 #: functions.php:146
 msgctxt ""
@@ -286,17 +294,17 @@ msgctxt ""
 msgid "on"
 msgstr "on"
 
+#: functions.php:116
+msgid "Use this widget area to display widgets in the second column of the footer."
+msgstr "Verwende diesen Widget-Bereich, um Widgets in der zweiten Spalte des Footers anzuzeigen."
+
 #: functions.php:125
 msgid "Use this widget area to display widgets in the third column of the footer."
 msgstr "Verwende diesen Widget-Bereich, um Widgets in der dritten Spalte des Footers anzuzeigen."
 
-#: functions.php:123
-msgid "Footer Three"
-msgstr "Footer Drei"
-
-#: functions.php:116
-msgid "Use this widget area to display widgets in the second column of the footer."
-msgstr "Verwende diesen Widget-Bereich, um Widgets in der zweiten Spalte des Footers anzuzeigen."
+#: functions.php:105
+msgid "Footer One"
+msgstr "Footer Eins"
 
 #: functions.php:114
 msgid "Footer Two"
@@ -305,10 +313,6 @@ msgstr "Footer Zwei"
 #: functions.php:107
 msgid "Use this widget area to display widgets in the first column of the footer."
 msgstr "Verwende diesen Widget-Bereich, um Widgets in der ersten Spalte des Footers anzuzeigen."
-
-#: functions.php:105
-msgid "Footer One"
-msgstr "Footer Eins"
 
 #: functions.php:70
 msgid "Primary Menu"
@@ -326,23 +330,23 @@ msgstr "Proudly powered by %s"
 msgid "http://wordpress.org/"
 msgstr "http://wordpress.org/"
 
-#: content-portfolio-single.php:49
+#: content-portfolio-single.php:50
 msgid "Tagged %1$s"
 msgstr "Getaggt mit %1$s"
 
-#: content-portfolio-single.php:43 inc/template-tags.php:122
+#: content-portfolio-single.php:44 inc/template-tags.php:122
 msgid "Posted in %1$s"
 msgstr "Veröffentlicht in %1$s"
 
 #. translators: used between list items, there is a space after the comma
-#: content-portfolio-single.php:41 content-portfolio-single.php:47
+#: content-portfolio-single.php:42 content-portfolio-single.php:48
 #: inc/template-tags.php:120 inc/template-tags.php:126
 msgid ", "
 msgstr ", "
 
-#: content-page.php:19 content-portfolio-single.php:53
+#: content-page.php:19 content-portfolio-single.php:54
 #: inc/template-tags.php:134 inc/template-tags.php:150
-#: inc/template-tags.php:190
+#: inc/template-tags.php:201
 msgid "Edit"
 msgstr "Bearbeiten"
 
@@ -358,21 +362,21 @@ msgstr "Tut mir Leid, aber zu deinem Suchbegriff konnte nichts gefunden werden. 
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr "Bereit deinen ersten Beitrag zu veröffentlichen? <a href=\"%1$s\">Erste Schritte</a>."
 
-#: content-none.php:13
-msgid "Nothing Found"
-msgstr "Nichts gefunden"
-
 #: content-front-portfolio.php:65
 msgid "Ready to publish your first project? <a href=\"%1$s\">Get started here</a>."
 msgstr "Bereit das erste Projekt zu veröffentlichen? <a href=\"%1$s\">Hier geht es los</a>"
 
-#: content-front-portfolio.php:64
-msgid "This section will display your latest projects. It can be disabled via the Customizer."
-msgstr "In diesem Abschnitt werden deine aktuellen Projekte angezeigt. Es kann mithilfe des Customizers deaktiviert werden."
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
 
 #: content-front-portfolio.php:61
 msgid "No Projects Found"
 msgstr "Es wurden keine Projekte gefunden"
+
+#: content-front-portfolio.php:64
+msgid "This section will display your latest projects. It can be disabled via the Customizer."
+msgstr "In diesem Abschnitt werden deine aktuellen Projekte angezeigt. Es kann mithilfe des Customizers deaktiviert werden."
 
 #: comments.php:77
 msgid "Comments are closed."

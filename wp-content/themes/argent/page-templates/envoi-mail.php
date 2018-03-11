@@ -5,6 +5,7 @@ get_header();
 
 <?php
 
+// méthode pour la connexion à la base de données
 function connexion_bdd() {
     $host = "localhost";
     $user = "root";
@@ -20,6 +21,7 @@ function connexion_bdd() {
     return $pdo;
 }
 
+// récupérer les listes des groupes
 $pdo = connexion_bdd();
 $requeteListe = 'SELECT es_email_group FROM wp_m2ccitours_es_emaillist group by es_email_group';
 $resultatListe = $pdo->query($requeteListe);
@@ -62,7 +64,7 @@ $resultatListe = $pdo->query($requeteListe);
         }
     </style>
     <div class="a">
-        Pour envoyer le mail d'invitation aux étudiants:
+        Pour envoyer le mail d'inscription aux étudiants:
         <ul>
             <li>Chercher dans l'espace admin le plugin Email Subscribers & Newsletters</li>
             <li>Ajouter un étudiant ou importer une liste d'étudiants avec un fichier *.csv</li>
@@ -95,22 +97,26 @@ $resultatListe = $pdo->query($requeteListe);
 </html>
 
 <?php
+
+// Vérifier si envoyer à une liste
 if (isset($_POST['submit_liste'])) {
     $selectGroupe = $_POST["selectGroupe"];
     $requeteMail = $pdo->prepare("SELECT es_email_mail FROM wp_m2ccitours_es_emaillist WHERE es_email_group =?");
     $requeteMail->execute([$selectGroupe]);
-
+    // Envoyer le mail à la liste choisie 
     while ($l = $requeteMail->fetch()) {
         $to = $l['es_email_mail'];
         envoyer_mail($to);
     }
 }
 
+// Vérifier si envoyer à une adresse mail individuelle
 if (isset($_POST['submit_indi'])) {
     $to = $_POST['email'];
     $requete_verif_email = $pdo->prepare("SELECT COUNT(*) FROM wp_m2ccitours_es_emaillist WHERE es_email_mail = ?");
     $requete_verif_email->execute([$to]);
     $resultat_verif_email = $requete_verif_email->fetchColumn();
+    // Vérifier si l'adresse mail est déjà ajoutée dans la liste
     if ($resultat_verif_email == 0) {
         echo "<HTML>";
         echo "<div class='c'>***Cette adresse mail $to n'est pas encore enregistrée dans la liste</div>";
@@ -120,6 +126,7 @@ if (isset($_POST['submit_indi'])) {
     }
 }
 
+// Méthode pour l'envoi des mails
 function envoyer_mail($email) {
     global $pdo;
     $sujet = "Invitation à l'espace gestion Rapport stage M2 CCI Tours";
@@ -131,8 +138,10 @@ function envoyer_mail($email) {
             "Merci de vous inscrire avec le lien ci-dessous: \n" .
             "http://localhost/wordpress/inscription/?email=$email&guid=$guid \n" .
             "A bientôt!";
-    $headers = "De: Master CCI Tours";
-    if (mail($email, $sujet, $texte, $headers)) {
+    $headers = "De: Gestion Rapport de stage" . "\r\n";
+
+    // Vérifier si les mails sont bien envoyés
+    if (wp_mail($email, $sujet, $texte, $headers)) {
         echo "<HTML>";
         echo "<div class='d'>Envoyé à $email </div><br/>";
         echo "<style> div.d{font-size:13pt; color:#50D050;}</style></HTML>";

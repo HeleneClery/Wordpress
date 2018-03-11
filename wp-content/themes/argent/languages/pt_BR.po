@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress.com - Themes - Argent package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-03-23 06:03:23+0000\n"
+"PO-Revision-Date: 2017-07-27 02:02:17+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,10 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: pt_BR\n"
 "Project-Id-Version: WordPress.com - Themes - Argent\n"
+
+#: inc/template-tags.php:181
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">disse:</span>"
 
 #: inc/wpcom-colors.php:146
 msgid "Widget Area Background"
@@ -82,108 +86,108 @@ msgstr "Argent"
 msgid "Search Results for: %s"
 msgstr "Resultados da pesquisa por: %s"
 
-#: inc/template-tags.php:272
+#: inc/template-tags.php:283
 msgid "Projects"
 msgstr "Projetos"
 
-#: inc/template-tags.php:250
+#: inc/template-tags.php:261
 msgid "Archives"
 msgstr "Arquivos"
 
 #. translators: 1: Taxonomy singular name, 2: Current taxonomy term
-#: inc/template-tags.php:248
+#: inc/template-tags.php:259
 msgid "%1$s: %2$s"
 msgstr "%1$s @ %2$s"
 
-#: inc/template-tags.php:244
+#: inc/template-tags.php:255
 msgid "Archives: %s"
 msgstr "Arquivo: %s"
 
-#: inc/template-tags.php:241
+#: inc/template-tags.php:252
 msgctxt "post format archive title"
 msgid "Chats"
 msgstr "Chats"
 
-#: inc/template-tags.php:239
+#: inc/template-tags.php:250
 msgctxt "post format archive title"
 msgid "Audio"
 msgstr "Áudio"
 
-#: inc/template-tags.php:237
+#: inc/template-tags.php:248
 msgctxt "post format archive title"
 msgid "Statuses"
 msgstr "Status"
 
-#: inc/template-tags.php:235
+#: inc/template-tags.php:246
 msgctxt "post format archive title"
 msgid "Links"
 msgstr "Links"
 
-#: inc/template-tags.php:233
+#: inc/template-tags.php:244
 msgctxt "post format archive title"
 msgid "Quotes"
 msgstr "Citações"
 
-#: inc/template-tags.php:231
+#: inc/template-tags.php:242
 msgctxt "post format archive title"
 msgid "Videos"
 msgstr "Vídeos"
 
-#: inc/template-tags.php:229
+#: inc/template-tags.php:240
 msgctxt "post format archive title"
 msgid "Images"
 msgstr "Imagens"
 
-#: inc/template-tags.php:227
+#: inc/template-tags.php:238
 msgctxt "post format archive title"
 msgid "Galleries"
 msgstr "Galerias"
 
-#: inc/template-tags.php:225
+#: inc/template-tags.php:236
 msgctxt "post format archive title"
 msgid "Asides"
 msgstr "Notas"
 
-#: inc/template-tags.php:222
+#: inc/template-tags.php:233
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr "F j, Y"
 
-#: inc/template-tags.php:222
+#: inc/template-tags.php:233
 msgid "Day: %s"
 msgstr "Dia: %s"
 
-#: inc/template-tags.php:220
+#: inc/template-tags.php:231
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
 
-#: inc/template-tags.php:220
+#: inc/template-tags.php:231
 msgid "Month: %s"
 msgstr "Mês: %s"
 
-#: inc/template-tags.php:218
+#: inc/template-tags.php:229
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
-#: inc/template-tags.php:218
+#: inc/template-tags.php:229
 msgid "Year: %s"
 msgstr "Ano: %s"
 
-#: inc/template-tags.php:216
+#: inc/template-tags.php:227
 msgid "Author: %s"
 msgstr "Autor: %s"
 
-#: inc/template-tags.php:214
+#: inc/template-tags.php:225
 msgid "Tag: %s"
 msgstr "Tag: %s"
 
-#: inc/template-tags.php:212
+#: inc/template-tags.php:223
 msgid "Category: %s"
 msgstr "Categoria: %s"
 
-#: inc/template-tags.php:182
+#: inc/template-tags.php:193
 msgid "Your comment is awaiting moderation."
 msgstr "O seu comentário aguarda moderação."
 
@@ -331,23 +335,23 @@ msgstr "Mantido com %s"
 msgid "http://wordpress.org/"
 msgstr "http://br.wordpress.org/"
 
-#: content-portfolio-single.php:49
+#: content-portfolio-single.php:50
 msgid "Tagged %1$s"
 msgstr "Marcado %1$s"
 
-#: content-portfolio-single.php:43 inc/template-tags.php:122
+#: content-portfolio-single.php:44 inc/template-tags.php:122
 msgid "Posted in %1$s"
 msgstr "Postado em %1$s"
 
 #. translators: used between list items, there is a space after the comma
-#: content-portfolio-single.php:41 content-portfolio-single.php:47
+#: content-portfolio-single.php:42 content-portfolio-single.php:48
 #: inc/template-tags.php:120 inc/template-tags.php:126
 msgid ", "
 msgstr ", "
 
-#: content-page.php:19 content-portfolio-single.php:53
+#: content-page.php:19 content-portfolio-single.php:54
 #: inc/template-tags.php:134 inc/template-tags.php:150
-#: inc/template-tags.php:190
+#: inc/template-tags.php:201
 msgid "Edit"
 msgstr "Editar"
 

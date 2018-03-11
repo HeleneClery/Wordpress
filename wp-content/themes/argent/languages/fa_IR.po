@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress.com - Themes - Argent package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-04-29 02:17:35+0000\n"
+"PO-Revision-Date: 2017-07-27 02:02:17+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,10 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: fa\n"
 "Project-Id-Version: WordPress.com - Themes - Argent\n"
+
+#: inc/template-tags.php:181
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">:گفت</span>"
 
 #: inc/wpcom-colors.php:141
 msgid "Main Accent"
@@ -28,17 +32,17 @@ msgstr "متن"
 msgid "Tagged"
 msgstr "برچسب‌خورده با"
 
-#: content-portfolio-archive.php:30
-msgid "Portfolio navigation"
-msgstr "ناوبری نمونه‌کار"
+#: content-portfolio-archive.php:28 inc/jetpack.php:39
+msgid "Older projects"
+msgstr "پروژه‌های قدیمی‌تر"
 
 #: content-portfolio-archive.php:29
 msgid "Newer projects"
 msgstr "پروژه‌های جدیدتر"
 
-#: content-portfolio-archive.php:28 inc/jetpack.php:39
-msgid "Older projects"
-msgstr "پروژه‌های قدیمی‌تر"
+#: content-portfolio-archive.php:30
+msgid "Portfolio navigation"
+msgstr "ناوبری نمونه‌کار"
 
 #: content-front-portfolio.php:9
 msgid "Recent Projects"
@@ -63,108 +67,108 @@ msgstr "Automattic"
 msgid "Search Results for: %s"
 msgstr "نتایج جست‌وجو برای: %s"
 
-#: inc/template-tags.php:272
+#: inc/template-tags.php:283
 msgid "Projects"
 msgstr "پروژه‌ها"
 
-#: inc/template-tags.php:250
+#: inc/template-tags.php:261
 msgid "Archives"
 msgstr "بایگانی"
 
 #. translators: 1: Taxonomy singular name, 2: Current taxonomy term
-#: inc/template-tags.php:248
+#: inc/template-tags.php:259
 msgid "%1$s: %2$s"
 msgstr "%1$s: %2$s"
 
-#: inc/template-tags.php:244
+#: inc/template-tags.php:255
 msgid "Archives: %s"
 msgstr "بایگانی‌ها: %s"
 
-#: inc/template-tags.php:241
+#: inc/template-tags.php:252
 msgctxt "post format archive title"
 msgid "Chats"
 msgstr "گپ‌ها"
 
-#: inc/template-tags.php:239
+#: inc/template-tags.php:250
 msgctxt "post format archive title"
 msgid "Audio"
 msgstr "صوت"
 
-#: inc/template-tags.php:237
+#: inc/template-tags.php:248
 msgctxt "post format archive title"
 msgid "Statuses"
 msgstr "وضعیت‌ها"
 
-#: inc/template-tags.php:235
+#: inc/template-tags.php:246
 msgctxt "post format archive title"
 msgid "Links"
 msgstr "پیوندها"
 
-#: inc/template-tags.php:233
+#: inc/template-tags.php:244
 msgctxt "post format archive title"
 msgid "Quotes"
 msgstr "گفتاوردها"
 
-#: inc/template-tags.php:231
+#: inc/template-tags.php:242
 msgctxt "post format archive title"
 msgid "Videos"
 msgstr "فیلم‌ها"
 
-#: inc/template-tags.php:229
+#: inc/template-tags.php:240
 msgctxt "post format archive title"
 msgid "Images"
 msgstr "تصویرها"
 
-#: inc/template-tags.php:227
+#: inc/template-tags.php:238
 msgctxt "post format archive title"
 msgid "Galleries"
 msgstr "گالری‌‌ها"
 
-#: inc/template-tags.php:225
+#: inc/template-tags.php:236
 msgctxt "post format archive title"
 msgid "Asides"
 msgstr "در حاشیه‌ها"
 
-#: inc/template-tags.php:222
+#: inc/template-tags.php:233
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr "j F Y"
 
-#: inc/template-tags.php:222
+#: inc/template-tags.php:233
 msgid "Day: %s"
 msgstr "روز: %s"
 
-#: inc/template-tags.php:220
+#: inc/template-tags.php:231
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
 
-#: inc/template-tags.php:220
+#: inc/template-tags.php:231
 msgid "Month: %s"
 msgstr "ماه: %s"
 
-#: inc/template-tags.php:218
+#: inc/template-tags.php:229
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
-#: inc/template-tags.php:218
+#: inc/template-tags.php:229
 msgid "Year: %s"
 msgstr "سال: %s"
 
-#: inc/template-tags.php:216
+#: inc/template-tags.php:227
 msgid "Author: %s"
 msgstr "نویسنده: %s"
 
-#: inc/template-tags.php:214
+#: inc/template-tags.php:225
 msgid "Tag: %s"
 msgstr "برچسب‌ها: %s"
 
-#: inc/template-tags.php:212
+#: inc/template-tags.php:223
 msgid "Category: %s"
 msgstr "دسته: %s"
 
-#: inc/template-tags.php:182
+#: inc/template-tags.php:193
 msgid "Your comment is awaiting moderation."
 msgstr "دیدگاه شما چشم به راه بررسی است."
 
@@ -189,15 +193,15 @@ msgstr "۱ دیدگاه"
 msgid "Leave a comment"
 msgstr "بیان دیدگاه"
 
-#: inc/template-tags.php:103
-msgctxt "post author"
-msgid "by %s"
-msgstr "به دست %s"
-
 #: inc/template-tags.php:98
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr "نوشته‌شده در %s"
+
+#: inc/template-tags.php:103
+msgctxt "post author"
+msgid "by %s"
+msgstr "به دست %s"
 
 #: inc/template-tags.php:68
 msgid "Post navigation"
@@ -231,35 +235,35 @@ msgstr "گزینه‌های پوسته"
 msgid "Menu"
 msgstr "گزینگان"
 
-#: header.php:22
-msgid "Skip to content"
-msgstr "پرش به محتوا"
-
 #: functions.php:221
 msgid "Read more <span class=\"screen-reader-text\">%1$s</span>"
 msgstr "بیشتر بخوانید <span class=\"screen-reader-text\">%1$s</span>"
 
-#: functions.php:163
-msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
-msgid "no-subset"
-msgstr " "
+#: header.php:22
+msgid "Skip to content"
+msgstr "پرش به محتوا"
+
+#: functions.php:123
+msgid "Footer Three"
+msgstr "پسایند سوم"
 
 #: functions.php:155
 msgctxt "Alegreya font: on or off"
 msgid "on"
 msgstr "روشن"
 
-#: functions.php:123
-msgid "Footer Three"
-msgstr "پسایند سوم"
-
-#: functions.php:114
-msgid "Footer Two"
-msgstr "پسایند دوم"
+#: functions.php:163
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr " "
 
 #: functions.php:105
 msgid "Footer One"
 msgstr "پسایند اول"
+
+#: functions.php:114
+msgid "Footer Two"
+msgstr "پسایند دوم"
 
 #: functions.php:70
 msgid "Primary Menu"
@@ -277,23 +281,23 @@ msgstr "با افتخار نیروگرفته از %s"
 msgid "http://wordpress.org/"
 msgstr "http://wordpress.org/"
 
-#: content-portfolio-single.php:49
+#: content-portfolio-single.php:50
 msgid "Tagged %1$s"
 msgstr "برچسب‌خورده با %1$s"
 
-#: content-portfolio-single.php:43 inc/template-tags.php:122
+#: content-portfolio-single.php:44 inc/template-tags.php:122
 msgid "Posted in %1$s"
 msgstr "فرستاده‌شده در %1$s"
 
 #. translators: used between list items, there is a space after the comma
-#: content-portfolio-single.php:41 content-portfolio-single.php:47
+#: content-portfolio-single.php:42 content-portfolio-single.php:48
 #: inc/template-tags.php:120 inc/template-tags.php:126
 msgid ", "
 msgstr "، "
 
-#: content-page.php:19 content-portfolio-single.php:53
+#: content-page.php:19 content-portfolio-single.php:54
 #: inc/template-tags.php:134 inc/template-tags.php:150
-#: inc/template-tags.php:190
+#: inc/template-tags.php:201
 msgid "Edit"
 msgstr "ویرایش"
 
@@ -309,21 +313,21 @@ msgstr "متأسفانه، هیچ‌چیزی با عبارت‌های جستجو
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr "آمادهٔ انتشار نخستین نوشتهٔ خود هستید؟ <a href=\"%1$s\">از اینجا بیآغازید</a>."
 
-#: content-none.php:13
-msgid "Nothing Found"
-msgstr "چیزی یافت نشد"
-
 #: content-front-portfolio.php:65
 msgid "Ready to publish your first project? <a href=\"%1$s\">Get started here</a>."
 msgstr "آماده‌اید تا اولین پروژه‌تان را منتشر کنید؟ <a href=\"%1$s\">از اینجا بیآغازید</a>."
 
-#: content-front-portfolio.php:64
-msgid "This section will display your latest projects. It can be disabled via the Customizer."
-msgstr "این بخش آخرین پروژه‌ها را نمایش می‌دهد. می‌توان آن را از راه سفارشی‌ساز از کار انداخت."
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "چیزی یافت نشد"
 
 #: content-front-portfolio.php:61
 msgid "No Projects Found"
 msgstr "هیچ پروژه‌ای یافت نشد"
+
+#: content-front-portfolio.php:64
+msgid "This section will display your latest projects. It can be disabled via the Customizer."
+msgstr "این بخش آخرین پروژه‌ها را نمایش می‌دهد. می‌توان آن را از راه سفارشی‌ساز از کار انداخت."
 
 #: comments.php:77
 msgid "Comments are closed."

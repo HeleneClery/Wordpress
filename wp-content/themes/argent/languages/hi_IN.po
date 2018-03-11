@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress.com - Themes - Argent package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-05-03 10:07:51+0000\n"
+"PO-Revision-Date: 2017-07-27 02:02:17+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,10 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: hi_IN\n"
 "Project-Id-Version: WordPress.com - Themes - Argent\n"
+
+#: inc/template-tags.php:181
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">कहते हैं:</span>"
 
 #: inc/wpcom-colors.php:146
 msgid "Widget Area Background"
@@ -28,6 +32,10 @@ msgstr "मूलशब्द"
 msgid "Tagged"
 msgstr "टैग की गईं"
 
+#: content-portfolio-archive.php:28 inc/jetpack.php:39
+msgid "Older projects"
+msgstr "पुरानी परियोजना"
+
 #: content-portfolio-archive.php:30
 msgid "Portfolio navigation"
 msgstr "पोर्टफोलियो नेविगेशन"
@@ -35,10 +43,6 @@ msgstr "पोर्टफोलियो नेविगेशन"
 #: content-portfolio-archive.php:29
 msgid "Newer projects"
 msgstr "नई परियोजनाएं"
-
-#: content-portfolio-archive.php:28 inc/jetpack.php:39
-msgid "Older projects"
-msgstr "पुरानी परियोजना"
 
 #: content-front-portfolio.php:9
 msgid "Recent Projects"
@@ -68,108 +72,108 @@ msgstr "https://wordpress.com/themes/argent/"
 msgid "Search Results for: %s"
 msgstr "%s के लिए खोज परिणाम:"
 
-#: inc/template-tags.php:272
+#: inc/template-tags.php:283
 msgid "Projects"
 msgstr "परियोजनाएं"
 
-#: inc/template-tags.php:250
+#: inc/template-tags.php:261
 msgid "Archives"
 msgstr "पुरालेख"
 
 #. translators: 1: Taxonomy singular name, 2: Current taxonomy term
-#: inc/template-tags.php:248
+#: inc/template-tags.php:259
 msgid "%1$s: %2$s"
 msgstr "%1$s: %2$s"
 
-#: inc/template-tags.php:244
+#: inc/template-tags.php:255
 msgid "Archives: %s"
 msgstr "पुरालेख: %s"
 
-#: inc/template-tags.php:241
+#: inc/template-tags.php:252
 msgctxt "post format archive title"
 msgid "Chats"
 msgstr "चैट्स"
 
-#: inc/template-tags.php:239
+#: inc/template-tags.php:250
 msgctxt "post format archive title"
 msgid "Audio"
 msgstr "ऑडियो"
 
-#: inc/template-tags.php:237
+#: inc/template-tags.php:248
 msgctxt "post format archive title"
 msgid "Statuses"
 msgstr "स्थितियां"
 
-#: inc/template-tags.php:235
+#: inc/template-tags.php:246
 msgctxt "post format archive title"
 msgid "Links"
 msgstr "कड़ियाँ"
 
-#: inc/template-tags.php:233
+#: inc/template-tags.php:244
 msgctxt "post format archive title"
 msgid "Quotes"
 msgstr "उद्धरण"
 
-#: inc/template-tags.php:231
+#: inc/template-tags.php:242
 msgctxt "post format archive title"
 msgid "Videos"
 msgstr "वीडियोस"
 
-#: inc/template-tags.php:229
+#: inc/template-tags.php:240
 msgctxt "post format archive title"
 msgid "Images"
 msgstr "छवियाँ"
 
-#: inc/template-tags.php:227
+#: inc/template-tags.php:238
 msgctxt "post format archive title"
 msgid "Galleries"
 msgstr "गैलेरियां"
 
-#: inc/template-tags.php:225
+#: inc/template-tags.php:236
 msgctxt "post format archive title"
 msgid "Asides"
 msgstr "एसाइड"
 
-#: inc/template-tags.php:222
+#: inc/template-tags.php:233
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr "F j, Y"
 
-#: inc/template-tags.php:222
+#: inc/template-tags.php:233
 msgid "Day: %s"
 msgstr "दिन: %s"
 
-#: inc/template-tags.php:220
+#: inc/template-tags.php:231
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
 
-#: inc/template-tags.php:220
+#: inc/template-tags.php:231
 msgid "Month: %s"
 msgstr "महीना: %s"
 
-#: inc/template-tags.php:218
+#: inc/template-tags.php:229
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
-#: inc/template-tags.php:218
+#: inc/template-tags.php:229
 msgid "Year: %s"
 msgstr "वर्ष: %s"
 
-#: inc/template-tags.php:216
+#: inc/template-tags.php:227
 msgid "Author: %s"
 msgstr "लेखक: %s"
 
-#: inc/template-tags.php:214
+#: inc/template-tags.php:225
 msgid "Tag: %s"
 msgstr "टैग: %s"
 
-#: inc/template-tags.php:212
+#: inc/template-tags.php:223
 msgid "Category: %s"
 msgstr "श्रेणी: %s"
 
-#: inc/template-tags.php:182
+#: inc/template-tags.php:193
 msgid "Your comment is awaiting moderation."
 msgstr "आपकी टिप्पणी स्वीकृति के इंतजार में है।"
 
@@ -194,15 +198,15 @@ msgstr "1 टिप्पणी"
 msgid "Leave a comment"
 msgstr "टिप्पणी करे"
 
-#: inc/template-tags.php:103
-msgctxt "post author"
-msgid "by %s"
-msgstr "%s द्वारा "
-
 #: inc/template-tags.php:98
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr "%s पर पोस्ट किया गया"
+
+#: inc/template-tags.php:103
+msgctxt "post author"
+msgid "by %s"
+msgstr "%s द्वारा "
 
 #: inc/template-tags.php:68
 msgid "Post navigation"
@@ -260,13 +264,13 @@ msgstr "अधिक पढ़ें <span class=\"screen-reader-text\">%1$s</sp
 msgid "Footer Three"
 msgstr "फूटर तीन"
 
-#: functions.php:114
-msgid "Footer Two"
-msgstr "फूटर दो"
-
 #: functions.php:105
 msgid "Footer One"
 msgstr "फूटर एक"
+
+#: functions.php:114
+msgid "Footer Two"
+msgstr "फूटर दो"
 
 #: functions.php:70
 msgid "Primary Menu"
@@ -284,23 +288,23 @@ msgstr "%s द्वारा गर्व के साथ संचालि�
 msgid "http://wordpress.org/"
 msgstr "http://wordpress.org/"
 
-#: content-portfolio-single.php:49
+#: content-portfolio-single.php:50
 msgid "Tagged %1$s"
 msgstr "टैग की गईं %1$s"
 
-#: content-portfolio-single.php:43 inc/template-tags.php:122
+#: content-portfolio-single.php:44 inc/template-tags.php:122
 msgid "Posted in %1$s"
 msgstr "%1$s में प्रकाशित किया गया"
 
 #. translators: used between list items, there is a space after the comma
-#: content-portfolio-single.php:41 content-portfolio-single.php:47
+#: content-portfolio-single.php:42 content-portfolio-single.php:48
 #: inc/template-tags.php:120 inc/template-tags.php:126
 msgid ", "
 msgstr ", "
 
-#: content-page.php:19 content-portfolio-single.php:53
+#: content-page.php:19 content-portfolio-single.php:54
 #: inc/template-tags.php:134 inc/template-tags.php:150
-#: inc/template-tags.php:190
+#: inc/template-tags.php:201
 msgid "Edit"
 msgstr "सम्पादन"
 

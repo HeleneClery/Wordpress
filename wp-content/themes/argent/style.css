@@ -2,13 +2,21 @@
 Theme Name: Argent
 Theme URI: https://wordpress.com/themes/argent/
 Description: Argent is a clean and modern portfolio theme, geared towards creative professionals like designers, artists, and photographers. With its simple homepage template featuring portfolio projects, Argent aims to draw viewers right at what matters most: your wonderful work.
-Version: 1.1.4
+Version: 1.1.5
 Author: Automattic
 Author URI: https://wordpress.com/themes/
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: argent
 Tags: custom-background, custom-colors, custom-header, custom-menu, featured-images, grid-layout, one-column, portfolio, rtl-language-support, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Argent is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
 /*--------------------------------------------------------------

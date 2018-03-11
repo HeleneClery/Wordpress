@@ -1,142 +1,152 @@
-# Translation of WordPress.com - Themes - Argent in French (France)
+# Translation of WordPress.com - Themes - Argent in Norwegian
 # This file is distributed under the same license as the WordPress.com - Themes - Argent package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-07-27 02:02:17+0000\n"
+"PO-Revision-Date: 2017-12-27 21:03:47+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: GlotPress/2.4.0-alpha\n"
-"Language: fr\n"
+"Language: no\n"
 "Project-Id-Version: WordPress.com - Themes - Argent\n"
 
 #: inc/template-tags.php:181
 msgid "%s <span class=\"says\">says:</span>"
-msgstr "%s <span class=\"says\">dit&nbsp;:</span>"
+msgstr "%s <span class=\"says\">sier:</span>"
 
 #: inc/wpcom-colors.php:141
 msgid "Main Accent"
-msgstr "Accent Principal"
-
-#: inc/wpcom-colors.php:146
-msgid "Widget Area Background"
-msgstr "Arrière-plan de la zone de widget"
+msgstr "Hovedaksent"
 
 #: inc/wpcom-colors.php:97
 msgid "Links"
-msgstr "Liens"
+msgstr "Lenker"
 
 #: inc/wpcom-colors.php:53
 msgid "Text"
-msgstr "Texte"
+msgstr "Tekst"
 
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:126
 msgid "Tagged"
-msgstr "Tagué"
-
-#: content-portfolio-archive.php:29
-msgid "Newer projects"
-msgstr "Projets plus récents"
+msgstr "Merket med"
 
 #: content-portfolio-archive.php:28 inc/jetpack.php:39
 msgid "Older projects"
-msgstr "Projets suivants"
+msgstr "Eldre prosjekter"
+
+#: content-portfolio-archive.php:29
+msgid "Newer projects"
+msgstr "Nyere prosjekter"
+
+#: content-portfolio-archive.php:30
+msgid "Portfolio navigation"
+msgstr "Porteføljenavigasjon"
 
 #: content-front-portfolio.php:9
 msgid "Recent Projects"
-msgstr "Projets récents"
+msgstr "Siste prosjekter"
 
 #. Template Name of the plugin/theme
 #: wp-content/themes/pub/argent/page-templates/front-page.php
 msgid "Front Page"
-msgstr "Page d'Accueil"
+msgstr "Forside"
 
 #. Author URI of the plugin/theme
 #: wp-content/themes/pub/argent/style.css
 msgid "https://wordpress.com/themes/"
-msgstr "https://wordpress.com/themes/"
+msgstr "https://wordpress.com/temaer"
 
 #. Author of the plugin/theme
 #: wp-content/themes/pub/argent/style.css
 msgid "Automattic"
 msgstr "Automattic"
 
+#. Theme URI of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "https://wordpress.com/themes/argent/"
+msgstr "https://wordpress.com/themes/argent/"
+
+#. Theme Name of the plugin/theme
+#: wp-content/themes/pub/argent/style.css
+msgid "Argent"
+msgstr "Argent"
+
 #: search.php:16
 msgid "Search Results for: %s"
-msgstr "Résultats de recherche pour : %s"
+msgstr "Søkeresultater for: %s"
 
 #: inc/template-tags.php:283
 msgid "Projects"
-msgstr "Projets"
+msgstr "Prosjekter"
 
 #: inc/template-tags.php:261
 msgid "Archives"
-msgstr "Archives"
+msgstr "Arkiver"
 
 #. translators: 1: Taxonomy singular name, 2: Current taxonomy term
 #: inc/template-tags.php:259
 msgid "%1$s: %2$s"
-msgstr "%1$s&nbsp;: %2$s"
+msgstr "%1$s @ %2$s"
 
 #: inc/template-tags.php:255
 msgid "Archives: %s"
-msgstr "Archives&nbsp;: %s"
+msgstr "Arkiv: %s"
 
 #: inc/template-tags.php:252
 msgctxt "post format archive title"
 msgid "Chats"
-msgstr "Chats"
+msgstr "Samtaler"
 
 #: inc/template-tags.php:250
 msgctxt "post format archive title"
 msgid "Audio"
-msgstr "Son"
+msgstr "Audio"
 
 #: inc/template-tags.php:248
 msgctxt "post format archive title"
 msgid "Statuses"
-msgstr "Statuts"
+msgstr "Statuser"
 
 #: inc/template-tags.php:246
 msgctxt "post format archive title"
 msgid "Links"
-msgstr "Liens"
+msgstr "Lenker"
 
 #: inc/template-tags.php:244
 msgctxt "post format archive title"
 msgid "Quotes"
-msgstr "Citations"
+msgstr "Sitater"
 
 #: inc/template-tags.php:242
 msgctxt "post format archive title"
 msgid "Videos"
-msgstr "Vidéos"
+msgstr "Filmer"
 
 #: inc/template-tags.php:240
 msgctxt "post format archive title"
 msgid "Images"
-msgstr "Images"
+msgstr "Bilder"
 
 #: inc/template-tags.php:238
 msgctxt "post format archive title"
 msgid "Galleries"
-msgstr "Galeries"
+msgstr "Gallerier"
 
 #: inc/template-tags.php:236
 msgctxt "post format archive title"
 msgid "Asides"
-msgstr "Apartés"
+msgstr "Notiser"
 
 #: inc/template-tags.php:233
 msgctxt "daily archives date format"
 msgid "F j, Y"
-msgstr "j F Y"
+msgstr "F j, Y"
 
 #: inc/template-tags.php:233
 msgid "Day: %s"
-msgstr "Jour: %s"
+msgstr "Dag: %s"
 
 #: inc/template-tags.php:231
 msgctxt "monthly archives date format"
@@ -145,7 +155,7 @@ msgstr "F Y"
 
 #: inc/template-tags.php:231
 msgid "Month: %s"
-msgstr "Mois: %s"
+msgstr "Måned: %s"
 
 #: inc/template-tags.php:229
 msgctxt "yearly archives date format"
@@ -154,144 +164,147 @@ msgstr "Y"
 
 #: inc/template-tags.php:229
 msgid "Year: %s"
-msgstr "Ann&eacute;e: %s"
+msgstr "År: %s"
 
 #: inc/template-tags.php:227
 msgid "Author: %s"
-msgstr "Auteur : %s"
+msgstr "Forfatter: %s"
 
 #: inc/template-tags.php:225
 msgid "Tag: %s"
-msgstr "Tag: %s"
+msgstr "Merkelapp: %s"
 
 #: inc/template-tags.php:223
 msgid "Category: %s"
-msgstr "Cat&eacute;gorie: %s"
+msgstr "Kategori: %s"
 
 #: inc/template-tags.php:193
 msgid "Your comment is awaiting moderation."
-msgstr "Votre commentaire est en attente de modération"
+msgstr "Din kommentar avventer moderasjon."
 
 #: inc/template-tags.php:166
 msgctxt "1: date, 2: time"
 msgid "%1$s at %2$s"
-msgstr "%1$s à %2$s"
+msgstr "%1$s, %2$s"
 
 #: inc/template-tags.php:150
 msgid "Pingback:"
-msgstr "Ping&nbsp;:"
+msgstr "Tilbaketråkk:"
 
 #: inc/template-tags.php:131
 msgid "% Comments"
-msgstr "% commentaires"
+msgstr "% kommentarer"
 
 #: inc/template-tags.php:131
 msgid "1 Comment"
-msgstr "1 commentaire"
+msgstr "1 kommentar"
 
 #: inc/template-tags.php:131
 msgid "Leave a comment"
-msgstr "Laisser un commentaire"
+msgstr "Legg igjen en kommentar"
 
 #: inc/template-tags.php:98
 msgctxt "post date"
 msgid "Posted on %s"
-msgstr "Publié le %s"
+msgstr "Publiser %s"
 
 #: inc/template-tags.php:103
 msgctxt "post author"
 msgid "by %s"
-msgstr "par %s"
+msgstr "av %s"
 
 #: inc/template-tags.php:68
 msgid "Post navigation"
-msgstr "Navigation des articles"
+msgstr "Innleggsnavigasjon"
 
 #: inc/template-tags.php:43
 msgid "Next"
-msgstr "Suivant"
+msgstr "Neste"
 
 #: inc/template-tags.php:39
 msgid "Previous"
-msgstr "Précédent"
+msgstr "Forrige"
 
 #: inc/template-tags.php:35
 msgid "Posts navigation"
-msgstr "Navigation des articles"
+msgstr "Innleggsnavigasjon"
 
 #: inc/extras.php:88
 msgid "Page %s"
-msgstr "Page %s"
-
-#: inc/customizer.php:43
-msgid "Portfolio Section Title"
-msgstr "Titre de la section portfolio"
+msgstr "Side %s"
 
 #: inc/extras.php:36
 msgid "Pages:"
-msgstr "Pages&nbsp;:"
+msgstr "Sider:"
 
 #: inc/customizer.php:22
 msgid "Theme Options"
-msgstr "Options du thème"
+msgstr "Temainnstillinger"
 
 #: header.php:27
 msgid "Menu"
-msgstr "Menu"
+msgstr "Meny"
 
 #: header.php:22
 msgid "Skip to content"
-msgstr "Aller au contenu principal"
+msgstr "Gå til innhold"
 
 #: functions.php:221
 msgid "Read more <span class=\"screen-reader-text\">%1$s</span>"
-msgstr "Lire la suite <span class=\"screen-reader-text\">%1$s</span>"
+msgstr "Les mer <span class=\"screen-reader-text\">%1$s</span>"
 
 #: functions.php:123
 msgid "Footer Three"
-msgstr "Pied de Page 3"
-
-#: functions.php:155
-msgctxt "Alegreya font: on or off"
-msgid "on"
-msgstr "on"
+msgstr "Sidebunn nr 3"
 
 #: functions.php:163
 msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
 msgid "no-subset"
 msgstr "no-subset"
 
+#: functions.php:155
+msgctxt "Alegreya font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:146
+msgctxt ""
+"Cabin\n"
+"\t font: on or off"
+msgid "on"
+msgstr "on"
+
 #: functions.php:105
 msgid "Footer One"
-msgstr "Pied de Page 1"
+msgstr "Sidebunn nr 1"
 
 #: functions.php:114
 msgid "Footer Two"
-msgstr "Pied de Page 2"
+msgstr "Sidebunn nr 2"
 
 #: functions.php:70
 msgid "Primary Menu"
-msgstr "Menu principal"
+msgstr "Primærmeny"
 
 #: footer.php:17
 msgid "Theme: %1$s by %2$s."
-msgstr "Thème %1$s par %2$s."
+msgstr "Tema: %1$s av %2$s."
 
 #: footer.php:15
 msgid "Proudly powered by %s"
-msgstr "Fièrement propulsé par %s"
+msgstr "Stolt drevet av %s"
 
 #: footer.php:15
 msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
+msgstr "https://wordpress.org/"
 
 #: content-portfolio-single.php:50
 msgid "Tagged %1$s"
-msgstr "Tagu&eacute; %1$s"
+msgstr "Stikkord %1$s"
 
 #: content-portfolio-single.php:44 inc/template-tags.php:122
 msgid "Posted in %1$s"
-msgstr "Posté dans %1$s"
+msgstr "Publisert i %1$s"
 
 #. translators: used between list items, there is a space after the comma
 #: content-portfolio-single.php:42 content-portfolio-single.php:48
@@ -303,59 +316,51 @@ msgstr ", "
 #: inc/template-tags.php:134 inc/template-tags.php:150
 #: inc/template-tags.php:201
 msgid "Edit"
-msgstr "Modifier"
+msgstr "endre"
 
 #: content-none.php:28
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Contenu Introuvable. Voulez-vous lancer une recherche?"
+msgstr "Vi klarer ikke å finne det du leter etter. Prøv å søke."
 
 #: content-none.php:23
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Contenu Introuvable. Réessayez en modifiant les termes de recherche."
+msgstr "Beklager, men intet passet til ditt søkeuttrykk. Vennligst prøv igjen med noen andre nøkkelord."
 
 #: content-none.php:19
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Pr&ecirc;t &agrave; publier votre premier article ? <a href=\"%1$s\">Allons-y !</a>."
-
-#: content-front-portfolio.php:65
-msgid "Ready to publish your first project? <a href=\"%1$s\">Get started here</a>."
-msgstr "Prêt à publier votre premier projet ? <a href=\"%1$s\">Commencez ici</a>."
+msgstr "Klar for å publisere ditt første innlegg? <a href=\"%1$s\">Kom i gang her</a>."
 
 #: content-none.php:13
 msgid "Nothing Found"
-msgstr "Aucun résultat"
-
-#: content-front-portfolio.php:61
-msgid "No Projects Found"
-msgstr "Aucun projet trouvé"
+msgstr "Ingenting funnet"
 
 #: comments.php:77
 msgid "Comments are closed."
-msgstr "Les commentaires sont fermés."
+msgstr "Kommentarer er stengt."
 
 #: comments.php:42 comments.php:65
 msgid "Newer Comments &raquo;"
-msgstr "Commentaires plus récents &raquo;"
+msgstr "Nyere kommentarer &raquo;"
 
 #: comments.php:41 comments.php:64
 msgid "&laquo; Older Comments"
-msgstr "&laquo; Commentaires plus anciens"
+msgstr "&laquo; Eldre kommentarer"
 
 #: comments.php:38 comments.php:61
 msgid "Comment navigation"
-msgstr "Navigation des commentaires"
+msgstr "Kommentarnavigasjon"
 
 #: comments.php:29
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Une r&eacute;flexion sur &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s r&eacute;flexions sur &ldquo;%2$s&rdquo;"
+msgstr[0] "En kommentar om &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s kommentarer om &ldquo;%2$s&rdquo;"
 
 #: 404.php:19
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
-msgstr "Contenu Introuvable. L'outil de Recherche ou les Liens ci-dessous vous remettront peut-être sur la voie&hellip;"
+msgstr "Det ser ut til at intet finnes på plasseringen. Prøve en av lenkene nedenfor eller et søk?"
 
 #: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "Oups ! Cette page est introuvable."
+msgstr "Auda! Den siden finnes ikke,"
