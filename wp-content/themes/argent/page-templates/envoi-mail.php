@@ -10,7 +10,7 @@ function connexion_bdd() {
     $host = "localhost";
     $user = "root";
     $passwd = "";
-    $bd = "rapport_stage";
+    $bd = DB_NAME;
     $connexion = "mysql:host=$host;dbname=$bd";
     $opt = [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

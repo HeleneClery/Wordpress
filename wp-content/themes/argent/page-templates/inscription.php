@@ -7,10 +7,10 @@ get_header();
 
 // connexion à la base de données rapport_stage avec PDO
 function connexion_bdd() {
-    $host = "localhost";
-    $user = "root";
-    $passwd = "";
-    $bd = "rapport_stage";
+    $host = DB_HOST;
+    $user = DB_USER;
+    $passwd = DB_PASSWORD;
+    $bd = DB_NAME;
     $connexion = "mysql:host=$host;dbname=$bd";
     $opt = [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

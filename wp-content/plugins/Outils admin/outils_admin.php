@@ -30,7 +30,7 @@ add_action('init','custom_login');
 function custom_login(){
  global $pagenow;
  if( 'wp-login.php' == $pagenow && $_GET['action']!="logout") {
-  wp_redirect('/wordpress/');
+  wp_redirect('/');
   exit();
  }
 }
@@ -124,3 +124,10 @@ add_filter('wp_mail_from_name','nom_affiche');
 function nom_affiche($name) {
   return 'Gestion Rapport de stage';
 }
+
+
+
+
+
+
+
