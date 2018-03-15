@@ -1133,7 +1133,7 @@ msgstr ""
 
 #: inc/class-wp-members.php:593
 msgid "Email Address"
-msgstr ""
+msgstr "Adresse mail"
 
 #: inc/class-wp-members.php:597
 msgid "New User Registration"

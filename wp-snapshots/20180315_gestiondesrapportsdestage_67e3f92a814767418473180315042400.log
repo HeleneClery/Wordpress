@@ -1,0 +1,80 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 15 March 2018 4 h 24 min
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.2.34
+WORDPRESS:	4.9.4
+PHP INFO:	7.2.2 | SAPI: apache2handler
+SERVER:		Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.2 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 2048M (40M default) 
+MEMORY STACK: 6MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported 
+FILTERED: [] 
+RESPONSE: Ran from C:/xampp/mysql/bin/mysqldump.exe 
+TABLES: total:26 | filtered:0 | create:26 
+SQL CREATED: 20180315_gestiondesrapportsdestage_67e3f92a814767418473180315042400_database.sql 
+SQL FILE SIZE: 533.67KB (546479) 
+SQL FILE TIME: 2018-03-15 04:24:13 
+SQL RUNTIME: 1.35 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  C:/xampp/htdocs/wordpress 
+ARCHIVE FILE: 20180315_gestiondesrapportsdestage_67e3f92a814767418473180315042400_archive.zip 
+FILTERS: *OFF* 
+DIRS:
+	not set 
+FILES:
+	not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	93.13MB 
+STATS:	Dirs 568 | Files 3,846 
+SQL ADDED: 20180315_gestiondesrapportsdestage_67e3f92a814767418473180315042400_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 4414
+    [filename] => C:\xampp\htdocs\wordpress\wp-snapshots\tmp\20180315_gestiondesrapportsdestage_67e3f92a814767418473180315042400_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 68.76MB 
+ARCHIVE RUNTIME: 12.62 sec. 
+MEMORY STACK: 6MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+PACK SIZE:  
+Template parsed with new data 
+Complete [C:/xampp/htdocs/wordpress/wp-snapshots/tmp/20180315_gestiondesrapportsdestage_67e3f92a814767418473180315042400_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 533.67KB 
+Installer File: 445.3KB 
+Archive File: 68.76MB  
+
+********************************************************************************
+RECORD ID:[2]
+TOTAL PROCESS RUNTIME: 14.62 sec.
+PEAK PHP MEMORY USED: 8MB
+DONE PROCESSING => 20180315_gestiondesrapportsdestage 15 March 2018 4 h 24 min
+ 

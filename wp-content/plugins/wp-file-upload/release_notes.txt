@@ -1,2 +1,0 @@
-<!--  --><span>Version 4.3.1 is a minor update. The only new feature introduced in the Free version is addition of placeholder option in available label positions of <strong>Additional Fields</strong>. When selected, the label text will be shown as <strong>placeholder</strong> of the field.<br/><br/>For more details about this version's changes please visit the Release Notes of the plugin's </span><a href="http://www.iptanus.com/wordpress-plugins/wordpress-file-upload/">support page</a><span>.</span><!--  -->
-<!--  -->

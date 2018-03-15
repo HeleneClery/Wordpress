@@ -4,11 +4,11 @@ get_header();
 ?>
 
 <?php
-
+// Méthode pour la connexion à la base de données
 function connexion_bdd() {
-    $host = "localhost";
-    $user = "root";
-    $passwd = "";
+    $host = DB_HOST;
+    $user = DB_USER;
+    $passwd = DB_PASSWORD;
     $bd = DB_NAME;
     $connexion = "mysql:host=$host;dbname=$bd";
     $opt = [

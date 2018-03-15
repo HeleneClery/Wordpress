@@ -7,9 +7,9 @@ get_header();
 
 // méthode pour la connexion à la base de données
 function connexion_bdd() {
-    $host = "localhost";
-    $user = "root";
-    $passwd = "";
+    $host = DB_HOST;
+    $user = DB_USER;
+    $passwd = DB_PASSWORD;
     $bd = DB_NAME;
     $connexion = "mysql:host=$host;dbname=$bd";
     $opt = [
@@ -136,7 +136,7 @@ function envoyer_mail($email) {
     $texte = "Bonjour,\n" .
             "Bienvenue au master CCI Tours!\n" .
             "Merci de vous inscrire avec le lien ci-dessous: \n" .
-            "http://localhost/wordpress/inscription/?email=$email&guid=$guid \n" .
+            "http://".$_SERVER['HTTP_HOST']."/inscription/?email=$email&guid=$guid \n" .
             "A bientôt!";
     $headers = "De: Gestion Rapport de stage" . "\r\n";
 

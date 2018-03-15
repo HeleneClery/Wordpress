@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Plugin Name: Outils admin
  * Plugin URI:
@@ -37,10 +37,10 @@ function custom_login(){
 
 
 
-// restreindre l'accès aux pages "Depot rapport", "Envoi email"
+// restreindre l'accès aux pages "Depot rapport", "Modifier le dépôt", "Envoi email"
 add_action( 'template_redirect', 'redirect_to_specific_page' );
 function redirect_to_specific_page() {
-if ( is_page(27) && ! is_user_logged_in() ) {
+if ( is_page(27) | is_page(237) && ! is_user_logged_in() ) {
 auth_redirect(); 
   }
 if (is_page(80) && !is_admin() && !current_user_can('administrator')) {
@@ -91,8 +91,8 @@ function verifier_utilisateur( $user ) {
 
 
 // Cacher la barre d'admin aux utilisateurs normaux
-add_action('after_setup_theme', 'remove_admin_bar');
-function remove_admin_bar() {
+add_action('after_setup_theme', 'cacher_barre_admin');
+function cacher_barre_admin() {
 if (!current_user_can('administrator') && !is_admin()) {
   show_admin_bar(false);
 }
